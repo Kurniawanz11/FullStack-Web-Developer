@@ -1,0 +1,162 @@
+<!--  
+* Basic HTML
+
+  => <!DOCTYPE>             (Mendefinisikan jenis dokumen)
+  => <html>                 (Mendefinisikan dokumen HTML)
+  => <head>                 (Berisi metadata/informasi untuk dokumen)
+  => <title>                (Mendefinisikan judul untuk dokumen)
+  => <body>                 (Mendefinisikan tubuh dokumen)
+  => <h1> hingga <h6>       (Mendefinisikan heading HTML)
+  => <p>                    (Mendefinisikan sebuah paragraf)
+  => <br>                   (Menyisipkan satu baris baru)
+  => <hr>                   (Mendefinisikan perubahan tematik dalam konten)
+  => <!--...--/>             (Mendefinisikan komentar)
+
+* Formatting
+
+  => <acronym>              (Tidak didukung di HTML5. Gunakan <abbr> sebagai gantinya.
+                             Mendefinisikan akronim)
+  => <abbr>                 (Mendefinisikan singkatan atau akronim)
+  => <address>              (Mendefinisikan informasi kontak untuk penulis/pemilik dokumen/artikel)
+  => <b>                    (Mendefinisikan teks tebal)
+  => <bdi>                  (Mengisolasi bagian teks yang mungkin diformat ke arah yang berbeda dari teks lain di luarnya
+  = <bdo>                   (Mengganti arah teks saat ini)
+  => <big>                  (Tidak didukung di HTML5. Gunakan CSS sebagai gantinya.
+                             Mendefinisikan teks besar)
+  => <blockquote>            (Mendefinisikan bagian yang dikutip dari sumber lain)
+  => <center>               (Tidak didukung di HTML5. Gunakan CSS sebagai gantinya.
+                             Mendefinisikan teks terpusat)
+  => <cite>                 (Mendefinisikan judul sebuah karya)
+  => <code>                 (Mendefinisikan sepotong kode komputer)
+  => <del>                  (Mendefinisikan teks yang telah dihapus dari dokumen)
+  => <dfn>                  (Menentukan istilah yang akan didefinisikan dalam konten)
+  => <em>                   (Mendefinisikan teks yang ditekankan)
+  => <font>                 (Tidak didukung di HTML5. Gunakan CSS sebagai gantinya.
+                             Mendefinisikan font, warna, dan ukuran untuk teks)
+  => <i>                    (Mendefinisikan bagian teks dalam suara atau suasana hati alternatif alternate)
+  => <ins>                  (Mendefinisikan teks yang telah dimasukkan ke dalam dokumen)
+  => <kbd>                  (Mendefinisikan input keyboard)
+  => <mark>                 (Mendefinisikan teks yang ditandai/disorot)
+  => <meter>                (Mendefinisikan pengukuran skalar dalam rentang yang diketahui (pengukur)
+  => <pre>                  (Mendefinisikan teks yang telah diformat sebelumnya)
+  => <progress>             (Mewakili kemajuan tugas)
+  => <q>                    (Mendefinisikan kutipan singkat)
+  => <rp>                   (Mendefinisikan apa yang akan ditampilkan di browser yang tidak mendukung anotasi ruby)
+  => <rt>                   (Mendefinisikan penjelasan/pengucapan karakter (untuk tipografi Asia Timur)
+  => <ruby>                 (Mendefinisikan anotasi ruby ​​(untuk tipografi Asia Timur)
+  => <s>                    (Mendefinisikan teks yang tidak lagi benar)
+  => <samp>                 (Mendefinisikan output sampel dari program komputer)
+  => <small>                (Mendefinisikan teks yang lebih kecil)
+  => <strike>               (Tidak didukung di HTML5. Gunakan <del> atau <s> sebagai gantinya.
+                             Mendefinisikan teks yang dicoret)
+  => <strong>               (Mendefinisikan teks penting)
+  => <sub>                  (Mendefinisikan teks yang disubscript)
+  => <sup>                  (Mendefinisikan teks superscript)
+  => <template>             (Mendefinisikan wadah untuk konten yang harus disembunyikan saat halaman dimuat)
+  => <time>                 (Mendefinisikan waktu tertentu (atau datetime)
+  => <tt>                   (Tidak didukung di HTML5. Gunakan CSS sebagai gantinya.
+                             Mendefinisikan teks teletype)
+  => <u>                    (Mendefinisikan beberapa teks yang tidak diartikulasikan dan ditata berbeda dari teks biasa)
+  => <var>                  (Mendefinisikan sebuah variabel)
+  => <wbr>                  (Mendefinisikan kemungkinan pemutusan baris)
+
+* Forms and Input
+
+  => <form>                 (Mendefinisikan bentuk HTML untuk input pengguna)
+  => <input>                (Mendefinisikan kontrol input)
+  => <textarea>             (Mendefinisikan kontrol input multiline (area teks)
+  => <button>               (Mendefinisikan tombol yang dapat diklik)
+  => <select>               (Mendefinisikan daftar drop-down)
+  => <optgroup>             (Mendefinisikan sekelompok opsi terkait dalam daftar drop-down)
+  => <option>               (Mendefinisikan opsi dalam daftar drop-down)
+  => <label>                (Mendefinisikan label untuk elemen <input>)
+  => <fieldset>             (Mengelompokkan elemen terkait dalam formulir)
+  => <legend>               (Mendefinisikan keterangan untuk elemen <fieldset>) 
+  => <datalist>             (Menentukan daftar opsi yang telah ditentukan sebelumnya untuk kontrol input)
+  => <output>               (Mendefinisikan hasil perhitungan)
+
+* Frames
+
+  => <iframe>               (Mendefinisikan bingkai sebaris)
+
+* Images
+
+  => <img>                  (Mendefinisikan sebuah gambar)
+  => <map>                  (Mendefinisikan peta gambar sisi klien)
+  => <area>                 (Mendefinisikan area di dalam peta gambar)
+  => <canvas>               (Digunakan untuk menggambar grafik, dengan cepat, melalui skrip (biasanya JavaScript))
+  => <figcaption>           (Mendefinisikan keterangan untuk elemen <figure>)
+  => <figure>               (Menentukan konten mandiri)
+  => <picture>              (Mendefinisikan wadah untuk beberapa sumber gambar)
+  => <svg>                  (Mendefinisikan wadah untuk grafik SVG)
+
+* Audio / Video
+
+  => <audio>                (Mendefinisikan konten suara)
+  => <source>               (Mendefinisikan beberapa sumber media untuk elemen media (<video>, <audio> dan <picture>))
+  => <track>                (Mendefinisikan trek teks untuk elemen media (<video> dan <audio>))
+  => <video>                (Mendefinisikan video atau film)
+
+* Links
+
+  => <a>                    (Mendefinisikan hyperlink)
+  => <link>                 (Mendefinisikan hubungan antara dokumen dan sumber daya eksternal (paling sering digunakan untuk menautkan ke lembar gaya))
+  => <nav>                  (Mendefinisikan link navigasi)
+
+* Lists
+
+  => <ul>                   (Mendefinisikan daftar yang tidak berurutan)
+  => <ol>                   (Mendefinisikan daftar yang dipesan)
+  => <li>                   (Mendefinisikan item daftar)
+  => <dir>                  (Tidak didukung di HTML5. Gunakan <ul> sebagai gantinya.
+                             Mendefinisikan daftar direktori)
+  => <dl>                   (Mendefinisikan daftar deskripsi)
+  => <dt>                   (Mendefinisikan istilah/nama dalam daftar deskripsi)
+  => <dd>                   (Mendefinisikan deskripsi istilah/nama dalam daftar deskripsi)
+
+* Tables
+
+  => <table>                (Mendefinisikan sebuah tabel)
+  => <caption>              (Mendefinisikan judul tabel)
+  => <th>                   (Mendefinisikan sel header dalam tabel)
+  => <tr>                   (Mendefinisikan baris dalam tabel)
+  => <td>                   (Mendefinisikan sel dalam tabel)
+  => <thead>                (Mengelompokkan konten header dalam sebuah tabel)
+  => <tbody>                (Mengelompokkan isi body dalam sebuah tabel)
+  => <tfoot>                (Mengelompokkan konten footer dalam sebuah tabel)
+  => <col>                  (Menentukan properti kolom untuk setiap kolom dalam elemen <colgroup>)
+  => <colgroup>             (Menentukan grup dari satu atau lebih kolom dalam tabel untuk pemformatan)
+
+* Styles and Semantics
+
+  => <style>                (Mendefinisikan informasi gaya untuk dokumen)
+  => <div>                  (Mendefinisikan bagian dalam dokumen)
+  => <span>                 (Mendefinisikan bagian dalam dokumen)
+  => <header>               (Mendefinisikan header untuk dokumen atau bagian)
+  => <footer>               (Mendefinisikan footer untuk dokumen atau bagian)
+  => <main>                 (Menentukan konten utama dokumen)
+  => <section>              (Mendefinisikan bagian dalam dokumen)
+  => <article>              (Mendefinisikan sebuah artikel)
+  => <aside>                (Mendefinisikan konten selain dari konten halaman)
+  => <detail>               (Mendefinisikan detail tambahan yang dapat dilihat atau disembunyikan pengguna)
+  => <dialog>               (Mendefinisikan kotak dialog atau jendela)
+  => <summary>              (Mendefinisikan heading yang terlihat untuk elemen <details>)
+  => <data>                 (Menambahkan terjemahan yang dapat dibaca mesin dari konten tertentu)
+
+* Meta Info
+
+  => head>                  (Mendefinisikan informasi tentang dokumen)
+  => <meta>                 (Mendefinisikan metadata tentang dokumen HTML)
+  => <base>                 (Menentukan URL/target dasar untuk semua URL relatif dalam dokumen)
+
+* Programming
+
+  => <script>               (Mendefinisikan skrip sisi klien)
+  => <noscript>             (Mendefinisikan konten alternatif untuk pengguna yang tidak mendukung skrip sisi klien)
+  => <applet>               (Tidak didukung di HTML5. Gunakan <embed> atau <object> sebagai gantinya.
+                             Mendefinisikan sebuah applet tertanam)
+  => <embed>                (Mendefinisikan wadah untuk aplikasi eksternal (non-HTML))
+  => <object>               (Mendefinisikan objek yang disematkan)
+  => <param>                (Mendefinisikan parameter untuk sebuah objek)
+
+-->

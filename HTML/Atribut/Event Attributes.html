@@ -1,0 +1,121 @@
+ <!--  
+ # Global Event Attributes
+  => HTML memiliki kemampuan untuk membiarkan peristiwa memicu tindakan di browser, seperti memulai JavaScript saat pengguna mengklik elemen.
+
+ # Di bawah ini adalah atribut peristiwa global yang dapat ditambahkan ke elemen HTML untuk menentukan tindakan peristiwa.
+
+
+
+* Window Event Attributes
+  => Peristiwa yang dipicu untuk objek jendela (berlaku untuk tag <body>):
+
+     Attribute          Value           Description
+  => onafterprint	      script	        Script yang akan dijalankan setelah dokumen dicetak
+  => onbeforeprint	    script	        Script yang akan dijalankan sebelum dokumen dicetak
+  => onbeforeunload	    script	        Script yang akan dijalankan ketika dokumen akan dibongkar
+  => onerror	          script	        Script yang akan dijalankan ketika terjadi kesalahan
+  => onhashchange	      script	        Skrip yang akan dijalankan ketika ada perubahan pada bagian jangkar dari URL
+  => onload	            script	        Kebakaran setelah halaman selesai dimuat
+  => onmessage	        script          Skrip yang akan dijalankan saat pesan dipicu
+  => onoffline	        script	        Skrip yang akan dijalankan saat browser mulai bekerja offline
+  => ononline	          script	        Script akan dijalankan ketika browser mulai bekerja online
+  => onpagehide	        script	        Skrip yang akan dijalankan saat pengguna menavigasi keluar dari halaman
+  => onpageshow	        script	        Skrip yang akan dijalankan saat pengguna menavigasi ke halaman
+  => onpopstate	        script	        Skrip yang akan dijalankan saat riwayat jendela berubah
+  => onresize	          script	        Kebakaran ketika jendela browser diubah ukurannya
+  => onstorage	        script	        Skrip yang akan dijalankan saat area Penyimpanan Web diperbarui
+  => onunload	          script	        Diaktifkan setelah halaman dibongkar (atau jendela browser telah ditutup)
+
+
+* Form Events
+  => Peristiwa yang dipicu oleh tindakan di dalam formulir HTML (berlaku untuk hampir semua elemen HTML, tetapi paling banyak digunakan dalam elemen formulir):
+
+    Attribute	          Value	          Description
+  => onblur	            script	        Menembakkan saat elemen kehilangan fokus  
+  => onchange	          script	        Menembakkan momen ketika nilai elemen diubah
+  => oncontextmenu	    script	        Skrip yang akan dijalankan saat menu konteks dipicu
+  => onfocus	          script	        Menembakkan momen ketika elemen mendapat fokus
+  => oninput	          script	        Skrip yang akan dijalankan saat elemen mendapat input pengguna user
+  => oninvalid	        script	        Skrip yang akan dijalankan saat elemen tidak valid
+  => onreset	          script	        Kebakaran ketika tombol Reset dalam formulir diklik
+  => onsearch	          script	        Diaktifkan saat pengguna menulis sesuatu di bidang pencarian (untuk <input="search">)
+  => onselect	          script	        Kebakaran setelah beberapa teks telah dipilih dalam sebuah elemen
+  => onsubmit	          script	        Kebakaran ketika formulir dikirimkan
+
+* Keyboard Events
+
+    Attribute	          Value	          Description
+  => onkeydown	        script	        Kebakaran ketika pengguna menekan tombol
+  => onkeypress	        script	        Kebakaran ketika pengguna menekan tombol
+  => onkeyup	          script	        Kebakaran ketika pengguna melepaskan kunci
+
+* Mouse Events
+
+     Attribute	        Value	          Description
+  => onclick	          script	        Menembak pada klik mouse pada elemen
+  => ondblclick	        script	        Menembak pada mouse klik dua kali pada elemen
+  => onmousedown	      script	        Kebakaran ketika tombol mouse ditekan ke bawah pada suatu elemen
+  => onmousemove	      script	        Diaktifkan saat penunjuk tetikus bergerak saat berada di atas elemen
+  => onmouseout	        script	        Kebakaran ketika penunjuk mouse bergerak keluar dari sebuah elemen
+  => onmouseover	      script	        Kebakaran ketika penunjuk tetikus bergerak di atas suatu elemen
+  => onmouseup	        script	        Kebakaran saat tombol mouse dilepaskan di atas elemen
+  => onmousewheel	      script	        Tidak digunakan lagi. Gunakan atribut onwheel sebagai gantinya
+  => onwheel	          script	        Menembak saat roda mouse berguling ke atas atau ke bawah di atas elemen
+
+* Drag Events
+
+     Attribute	        Value	          Description
+  => ondrag	            script	        Skrip yang akan dijalankan saat elemen diseret
+  => ondragend	        script	        Skrip yang akan dijalankan di akhir operasi seret
+  => ondragenter	      script	        Skrip yang akan dijalankan ketika elemen telah diseret ke target penurunan yang valid
+  => ondragleave	      script	        scrip untuk dijalankan ketika sebuah elemen meninggalkan target penurunan yang valid
+  => ondragover	        script	        Skrip yang akan dijalankan saat elemen diseret melewati target penurunan yang valid
+  => ondragstart	      script	        Script yang akan dijalankan pada awal operasi drag
+  => ondrop	            script	        Skrip yang akan dijalankan saat elemen yang diseret dijatuhkan
+  => onscroll	          script	        Skrip yang akan dijalankan saat bilah gulir elemen sedang digulir
+
+* Clipboard Events
+
+     Attribute	        Value	          Description
+  => oncopy	            script	        Diaktifkan saat pengguna menyalin konten elemen
+  => oncut	            script	        Kebakaran ketika pengguna memotong konten elemen
+  => onpaste	          script	        Diaktifkan saat pengguna menempelkan beberapa konten dalam suatu elemen
+
+* Media Events
+
+  => Peristiwa yang dipicu oleh media seperti video, gambar, dan audio (berlaku untuk semua elemen HTML, tetapi paling umum di elemen media, seperti <audio>, <embed>, <img>, <object>, dan <video>).
+
+ # Tip: Lihat Referensi DOM Audio dan Video HTML kami untuk informasi lebih lanjut.
+
+     Attribute	        Value	          Description
+  => onabort	          script	        Skrip yang akan dijalankan saat dibatalkan
+  => oncanplay	        script	        Skrip yang akan dijalankan ketika file siap untuk mulai diputar (bila sudah cukup buffer untuk memulai)
+  => oncanplaythrough	  script	        Skrip yang akan dijalankan ketika file dapat diputar sampai akhir tanpa berhenti untuk buffering
+  => oncuechange	      script	        Skrip yang akan dijalankan saat isyarat berubah dalam elemen <track>
+  => ondurationchange	  script	        Skrip yang akan dijalankan ketika panjang media berubah
+  => onemptied	        script	        Skrip yang akan dijalankan ketika sesuatu yang buruk terjadi dan file tiba-tiba tidak tersedia (seperti terputus secara tak terduga)
+  => onended	          script	        Skrip yang akan dijalankan ketika media telah mencapai akhir (acara yang berguna untuk pesan seperti "terima kasih telah mendengarkan")
+  => onerror	          script	        Skrip yang akan dijalankan ketika terjadi kesalahan saat file sedang dimuat
+  => onloadeddata	      script	        Skrip yang akan dijalankan saat data media dimuat
+  => onloadedmetadata	  script	        Skrip yang akan dijalankan saat meta data (seperti dimensi dan durasi) dimuat
+  => onloadstart	      script	        Skrip yang akan dijalankan tepat saat file mulai dimuat sebelum semuanya benar-benar dimuat
+  => onpause	          script	        Skrip yang akan dijalankan ketika media dijeda baik oleh pengguna atau secara terprogram
+  => onplay	            script	        Skrip yang akan dijalankan ketika media siap untuk mulai diputar
+  => onplaying	        script	        Skrip yang akan dijalankan ketika media benar-benar sudah mulai diputar
+  => onprogress	        script	        Script yang akan dijalankan saat browser sedang dalam proses mendapatkan data media
+  => onratechange	      script	        Skrip yang akan dijalankan setiap kali kecepatan pemutaran berubah (seperti saat pengguna beralih ke mode gerakan lambat atau maju cepat)
+  => onseeked	          script	        Skrip yang akan dijalankan ketika atribut pencarian disetel ke false yang menunjukkan bahwa pencarian telah berakhir
+  => onseeking	        script	        Skrip yang akan dijalankan ketika atribut pencarian disetel ke true yang menunjukkan bahwa pencarian aktif
+  => onstalled	        script	        Skrip yang akan dijalankan saat browser tidak dapat mengambil data media karena alasan apa pun
+  => onsuspend	        script	        Skrip yang akan dijalankan saat mengambil data media dihentikan sebelum dimuat sepenuhnya karena alasan apa pun
+  => ontimeupdate	      script	        Skrip yang akan dijalankan ketika posisi pemutaran telah berubah (seperti ketika pengguna maju cepat ke titik lain di media)
+  => onvolumechange	    script	        Scrip yang akan dijalankan setiap kali volume diubah yang (termasuk mengatur volume ke "mute")
+  => onwaiting	        script	        Skrip akan dijalankan saat media dijeda tetapi diharapkan dilanjutkan (seperti saat media dijeda untuk menyangga lebih banyak data)
+
+
+* Misc Events
+
+     Attribute	        Value	          Description
+  => ontoggle	          script	        Diaktifkan saat pengguna membuka atau menutup elemen <details>
+
+    -->

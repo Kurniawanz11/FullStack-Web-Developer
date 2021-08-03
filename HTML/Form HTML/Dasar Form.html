@@ -1,0 +1,112 @@
+<!--
+
+* Formulir HTML digunakan untuk mengumpulkan input pengguna. Input pengguna paling sering dikirim ke server untuk diproses.
+
+* Elemen <form>
+  => <form>Elemen HTML digunakan untuk membuat formulir HTML untuk input pengguna
+  => The <form>unsur adalah wadah untuk berbagai jenis elemen input, seperti: bidang teks, checkbox, tombol radio, tombol submit, dll
+  => Semua elemen formulir yang berbeda tercakup dalam bab ini: Elemen Formulir HTML.
+
+====== EXP =========
+<form>
+.
+form elements
+.
+</form>
+====================
+
+
+* Elemen <input>
+  => <input>Elemen HTML adalah elemen formulir yang paling banyak digunakan.
+  => Sebuah <input>elemen dapat ditampilkan dalam banyak cara, tergantung pada type atributnya.
+
+ # Berikut beberapa contohnya:
+     Jenis	                            Keterangan
+  => <input type="teks">	            Menampilkan bidang input teks satu baris
+  => <input type="radio">	            Menampilkan tombol radio (untuk memilih salah satu dari banyak pilihan)
+  => <input type="kotak centang">	    Menampilkan kotak centang (untuk memilih nol atau lebih dari banyak pilihan)
+  => <input type="kirim">	            Menampilkan tombol kirim (untuk mengirimkan formulir)
+  => <input type="tombol">	            Menampilkan tombol yang dapat diklik.
+
+
+* type/bidang Teks
+  => The <input type="text">mendefinisikan field input single-line untuk input teks.
+  => Catatan: Formulir itu sendiri tidak terlihat. Perhatikan juga bahwa lebar default bidang input adalah 20 karakter.
+
+========== EXP ===========
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+==========================
+
+
+* Elemen <label>
+  => The <label>tag mendefinisikan label bagi banyak elemen form.
+  => The <label>elemen ini berguna untuk pengguna pembaca layar, karena layar-reader akan membaca keras-keras label ketika pengguna fokus pada elemen input.
+  => The <label>elemen juga membantu pengguna yang memiliki mengklik kesulitan daerah yang sangat kecil (seperti tombol radio atau kotak centang) - karena ketika pengguna mengklik teks dalam <label>elemen, ia mengubah tombol radio / checkbox.
+  => The foratribut dari <label>tag harus sama dengan idatribut dari <input> elemen untuk mengikat mereka bersama-sama.
+
+* type/Tombol radio 
+  => The <input type="radio">mendefinisikan tombol radio.
+  => Tombol radio memungkinkan pengguna memilih SATU dari sejumlah pilihan yang terbatas.
+
+============= EXP ===============
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+==================================
+
+* checkbox
+  => The <input type="checkbox">mendefinisikan kotak centang .
+  => Kotak centang memungkinkan pengguna memilih opsi NOL atau LEBIH dari sejumlah pilihan terbatas.
+
+=============== EXP =================
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+=====================================
+
+
+* Type/submit
+  => The <input type="submit">mendefinisikan tombol untuk mengirimkan data formulir ke bentuk-handler.
+  => Form-handler biasanya berupa file di server dengan skrip untuk memproses data input.
+  => Form-handler ditentukan dalam action atribut form .
+
+=============== EXP =================
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+======================================
+
+* Atribut Nama untuk <input>
+  => Perhatikan bahwa setiap bidang input harus memiliki nameatribut yang akan dikirimkan.
+  => Jika nameatribut dihilangkan, nilai bidang input tidak akan dikirim sama sekali.
+
+=============== EXP ==================
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+======================================
+
+  -->

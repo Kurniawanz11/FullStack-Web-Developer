@@ -1,0 +1,123 @@
+<!--  
+HTML Accessibility
+  => Selalu tulis kode HTML dengan mempertimbangkan aksesibilitas!
+
+ # Berikan pengguna cara yang baik untuk menavigasi dan berinteraksi dengan situs Anda. Buat kode HTML Anda semantik mungkin.
+
+
+1. Semantic HTML 
+=> HTML semantik berarti menggunakan elemen HTML yang benar untuk tujuan yang benar sebanyak mungkin. Unsur semantik adalah unsur yang memiliki makna; jika Anda membutuhkan tombol, gunakan <button>elemen (dan bukan <div>elemen).
+
+* Semantic 
+======== EXP ============ 
+<button>Click Me</button>
+=========================
+
+* Non Semantic
+======== EXP ============
+   <div>Click Me</div>
+=========================    
+
+ # HTML semantik memberikan konteks kepada pembaca layar, yang membaca konten halaman dengan lantang.
+
+  > Dengan contoh tombol dalam pikiran:
+    => tombol memiliki gaya yang lebih cocok secara default
+    => pembaca layar mengidentifikasinya sebagai tombol
+    => bisa fokus
+    => dapat diklik
+
+ # Sebuah tombol juga dapat diakses oleh orang-orang yang mengandalkan navigasi hanya keyboard; itu dapat diklik dengan mouse dan tombol, dan dapat ditaburi di antara (menggunakan tombol tab pada keyboard).
+
+    > Contoh elemen non-semantik : <div>dan <span>- Tidak menceritakan apa pun tentang kontennya.
+
+    > Contoh elemen semantik : <form>, <table>, dan <article>- Jelas mendefinisikan isinya.
+
+
+2. Headings Are Important
+=> Judul didefinisikan dengan tag <h1>to <h6>:
+========= EXP =========
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+========================
+
+ # Mesin pencari menggunakan judul untuk mengindeks struktur dan konten halaman web Anda.
+ # Pengguna menelusuri halaman Anda berdasarkan judulnya. Penting untuk menggunakan judul untuk menunjukkan struktur dokumen dan hubungan antara bagian yang berbeda.
+ # <h1>heading sebaiknya digunakan untuk heading utama, diikuti <h2>heading, kemudian heading yang kurang penting <h3>, dan seterusnya.
+
+* Catatan: Gunakan heading HTML untuk heading saja. Jangan gunakan heading untuk membuat teks menjadi BESAR atau tebal.
+
+3. Alternative Text
+=> The altatribut menyediakan teks alternatif untuk gambar, jika pengguna untuk beberapa alasan tidak bisa melihatnya (karena koneksi yang lambat, kesalahan dalam src atribut, atau jika pengguna menggunakan pembaca layar).
+
+Nilai altatribut harus mendeskripsikan gambar: 
+========= EXP ==========
+<img src="img_chania.jpg" alt="Flowers in Chania">
+========================
+
+4. Declare the Language
+=> Anda harus selalu menyertakan lang atribut di dalam <html>tag, untuk mendeklarasikan bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.
+
+Contoh berikut menentukan bahasa Inggris sebagai bahasa:
+======= EXP ======= 
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+
+        ...
+
+    </body>
+</html>
+====================
+
+5. Use Clear Language
+* Selalu gunakan bahasa yang jelas, yang mudah dimengerti. Juga cobalah untuk menghindari karakter yang tidak dapat dibaca dengan jelas oleh pembaca layar. Sebagai contoh:
+    => Buat kalimat sesingkat mungkin
+    => Hindari tanda hubung. Alih-alih menulis 1-3, tulis 1 hingga 3
+    => Hindari singkatan. Daripada menulis Februari, tulislah Februari
+    => Hindari kata-kata gaul
+
+6. Create Good Link Text
+=> Teks tautan harus menjelaskan dengan jelas informasi apa yang akan diperoleh pembaca dengan mengklik tautan itu.
+Exp : 
+====================
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Good Link Text</h2>
+<p>A link should explain clearly what information the reader will get by clicking on that link.</p>
+
+<p>Examples of bad links:</p>
+<ul>
+  <li><a href="#">Click here</a></li>
+  <li><a href="#">Read more..</a></li>
+  <li>Buy tickets to Mars <a href="#">here</a></li>
+</ul>
+
+<p>Examples of good links:</p>
+<ul>
+  <li><a href="#">Find out more about the HTML language</a></li>
+  <li>Read more about <a href="#">how to eat healthy</a></li>
+  <li><a href="#">Buy tickets to Mars here</a></li>
+</ul>
+
+<p>Note that these are just link examples, and will not send you away when you click on them.</p>
+
+</body>
+</html>
+===========================
+
+7. The title Attribute
+=> The title Atribut menentukan informasi tambahan tentang elemen.
+=> Informasi ini paling sering ditampilkan sebagai teks tooltip ketika mouse bergerak di atas elemen.
+=> The title atribut dapat digunakan pada setiap elemen HTML (akan memvalidasi pada setiap elemen HTML. Namun, itu belum tentu berguna).
+==== Exp =====
+<p><abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<p title="Free Web tutorials">W3Schools.com</p>
+===============
+
+-->

@@ -1,0 +1,165 @@
+<!--  
+Semantic HTML => Elemen dengan makna
+
+* Apa itu Semantic HTML ?
+ => elemen yang dengan jelas menggambarkan maknanya dengan cara yang dapat dibaca manusia dan mesin
+
+* Perbedaan Semantic dan Non-Semantic HTML 
+  => Contoh elemen non-semantik : <div>dan <span>- Tidak menceritakan apa pun tentang kontennya.
+  => Contoh elemen semantik : <form>, <table>, dan <article>- Jelas mendefinisikan isinya.
+
+* Elemen Semantik dalam HTML 5
+  => <article>                      (Mendefinisikan konten mandiri dan mandiri)
+  => <aside>                        (Mendefinisikan konten selain dari konten halaman)
+  => <details>                      (Mendefinisikan detail tambahan yang dapat dilihat atau disembunyikan pengguna)
+  => <figcaption>                   (Mendefinisikan keterangan untuk elemen <figure>)
+  => <figure>                       (Menentukan konten mandiri, seperti ilustrasi, diagram, foto, daftar kode, dll)
+  => <footer>                       (Mendefinisikan footer untuk dokumen atau bagian)
+  => <header>                       (Menentukan header untuk dokumen atau bagian)
+  => <main>                         (Menentukan konten utama dokumen)
+  => <mark>                         (Mendefinisikan teks yang ditandai/disorot)
+  => <nav>                          (Mendefinisikan link navigasi)
+  => <section>                      (Mendefinisikan bagian dalam dokumen)
+  => <summary>                      (Mendefinisikan heading yang terlihat untuk elemen <details>)
+  => <time>                         (Mendefinisikan tanggal/waktu)
+
+* Mengapa menggunakan elemen semantik?
+  => Lebih mudah dibaca
+  => aksesibilitas yang lebih besar
+  => kode yang lebih konsisten
+
+  # Menurut W3C: "Web semantik memungkinkan data untuk dibagikan dan digunakan kembali di seluruh aplikasi, perusahaan, dan komunitas."
+
+* Element <section> 
+  => elemen mendefinisikan bagian dalam sebuah dokumen
+  => Sebuah halaman web biasanya dapat dibagi menjadi beberapa bagian untuk pengenalan, konten, dan informasi kontak
+
+Exp : 
+<section>
+<h1>WWF</h1>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+<h1>WWF's Panda symbol</h1>
+<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+* Element <article> 
+   => elemen menetapkan independen, konten mandiri.
+   => Sebuah artikel harus masuk akal dengan sendirinya, dan harus memungkinkan untuk mendistribusikannya secara independen dari situs web lainnya.
+# Contoh di mana <article>elemen dapat digunakan:
+    => Posting forum
+    => Postingan blog
+    => Artikel koran
+ 
+ Exp : 
+ <article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+<h2>Mozilla Firefox</h2>
+<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+* Elemen <header> 
+  => elemen merupakan wadah untuk konten pengantar atau satu set link navigasi.
+ # Sebuah <header>elemen biasanya berisi:
+    => satu atau lebih elemen heading (<h1> - <h6>)
+    => logo atau ikon
+    => informasi kepengarangan
+ # Catatan: Anda dapat memiliki beberapa <header>elemen dalam satu dokumen HTML. Namun, <header>tidak dapat ditempatkan di dalam <footer>, <address>atau <header>elemen lain .
+
+ Exp :
+ <article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+
+* Elemen <footer>
+  => elemen mendefinisikan footer untuk dokumen atau bagian.
+ # Sebuah <footer>elemen biasanya berisi:
+    => informasi kepengarangan
+    => informasi hak cipta
+    => kontak informasi
+    => peta situs
+    => link kembali ke atas
+    => Dokumen terkait
+ # Anda dapat memiliki beberapa <footer>elemen dalam satu dokumen.
+
+ Exp :
+ <footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+* Elemen <nav> 
+  => elemen mendefinisikan satu set link navigasi
+
+  # Perhatikan bahwa TIDAK semua tautan dokumen harus berada di dalam <nav>elemen. The <nav>elemen dimaksudkan hanya untuk blok utama link navigasi.
+    Browser, seperti pembaca layar untuk pengguna yang dinonaktifkan, dapat menggunakan elemen ini untuk menentukan apakah akan menghilangkan rendering awal konten ini.
+
+ Exp :
+ <nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+* Elemen <aside>
+  => elemen mendefinisikan beberapa konten selain dari konten itu ditempatkan di (seperti sidebar).
+  => konten harus secara tidak langsung terkait dengan konten sekitarnya.
+
+  Exp : 
+  <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+* Elemen <figure> dan <figcaption>
+  => <figure> tag menspesifikasikan konten mandiri, seperti ilustrasi, diagram, foto, daftar kode, dll
+  => <figcaption> tag mendefinisikan keterangan untuk <figure>elemen. The <figcaption>elemen dapat ditempatkan sebagai yang pertama atau sebagai anak terakhir dari <figure>elemen.
+  => <img>elemen mendefinisikan sebenarnya gambar / ilustrasi. 
+
+  Exp : 
+  <figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+* Elemen <small>
+  => elemen sering muncul dalam <footer>atau <aside>
+  => biasanya akan berisi informasi hak cipta atau penolakan hukum, dan baik cetak seperti lainnya
+  =>  Namun, ini tidak dimaksudkan untuk membuat teks lebih kecil. Itu hanya menggambarkan isinya, bukan meresepkan presentasi.
+
+  Exp : 
+  <footer><small>&copy;Company A</small> Date</footer>
+
+* Elemen <time> 
+  => elemen memungkinkan ambigu tanggal ISO 8601 harus terpasang ke versi terbaca-manusia dari tanggal tersebut.
+
+  Exp : 
+  <time datetime="2017-10-31T11:21:00+02:00">Tuesday, 31 October 2017</time>
+
+* Elemen <hgroup>
+  => elemen harus digunakan di mana Anda ingin judul utama dengan satu atau lebih subpos.
+
+  Exp : 
+<hgroup>
+  <h1>Heading 1</h1>
+  <h2>Subheading 1</h2>
+  <h2>Subheading 2</h2>
+</hgroup>
+
+ # INGAT, bahwa <header>elemen dapat berisi konten apa pun, tetapi <hgroup>elemen tersebut hanya dapat berisi header lain, yaitu <h1>to <h6>dan include <hgroup>.
+
+  -->

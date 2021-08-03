@@ -1,0 +1,78 @@
+ 
+ <!--  
+ * Atribut Tindakan/Actions
+  => The actionAtribut mendefinisikan tindakan yang akan dilakukan ketika formulir dikirimkan.
+  => Biasanya, data formulir dikirim ke file di server ketika pengguna mengklik tombol kirim.
+  => Pada contoh di bawah, data formulir dikirim ke file bernama "action_page.php". File ini berisi skrip sisi server yang menangani data formulir:
+  => Tip: Jika actionatribut dihilangkan, tindakan diatur ke halaman saat ini.
+=============== EXP ==================
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+======================================
+
+
+* Atribut Target
+  => The targetmenspesifikasikan atribut mana untuk menampilkan respon yang diterima setelah mengirimkan formulir.
+  => The targetatribut dapat memiliki salah satu dari nilai berikut:
+  => Nilai default adalah _selfyang berarti bahwa respons akan terbuka di jendela saat ini.
+
+     Value	            Description
+  => _blank         Respons ditampilkan di jendela atau tab baru
+  => _self          Respons ditampilkan di jendela saat ini
+  => _parent        Responnya ditampilkan di bingkai induk
+  => _top           Respons ditampilkan di seluruh bagian jendela
+  => framename      Respons ditampilkan dalam iframe bernama
+
+============== EXP =================
+<form action="/action_page.php" target="_blank">
+====================================
+
+* Atribut Metode
+  => The methodatribut menentukan metode HTTP yang akan digunakan ketika mengirimkan data formulir.
+  => Data formulir dapat dikirim sebagai variabel URL (dengan method="get") atau sebagai transaksi posting HTTP (dengan method="post").
+  => Metode HTTP default saat mengirimkan data formulir adalah GET.
+  => Tip: Selalu gunakan POST jika data formulir berisi informasi sensitif atau pribadi! 
+
+ # Catatan tentang GET:
+    => Menambahkan data formulir ke URL, dalam pasangan nama/nilai
+    => JANGAN PERNAH menggunakan GET untuk mengirim data sensitif! (data formulir yang dikirimkan terlihat di URL!)
+    => Panjang URL dibatasi (2048 karakter)
+    => Berguna untuk pengiriman formulir di mana pengguna ingin menandai hasilnya
+    => GET bagus untuk data yang tidak aman, seperti string kueri di Google
+
+=============== EXP : GET ===================
+<form action="/action_page.php" method="get">
+=============================================
+
+ # Catatan di POST:
+    => Menambahkan data formulir di dalam isi permintaan HTTP (data formulir yang dikirimkan tidak ditampilkan di URL)
+    => POST tidak memiliki batasan ukuran, dan dapat digunakan untuk mengirim data dalam jumlah besar.
+    => Pengiriman formulir dengan POST tidak dapat di-bookmark
+
+=============== EXP : POST ====================
+<form action="/action_page.php" method="post">
+===============================================
+
+
+* Atribut Pelengkapan Otomatis/autocomplete
+  => The autocompletemenspesifikasikan atribut apakah formulir harus memiliki autocomplete atau menonaktifkan.
+  => Saat pelengkapan otomatis aktif, browser secara ot
+  
+================ EXP ==================
+<form action="/action_page.php" autocomplete="on">
+=======================================
+
+* Atribut Novalidate
+  => The novalidateatribut adalah atribut boolean.
+  => Saat ada, ini menentukan bahwa formulir-data (input) tidak boleh divalidasi saat dikirimkan.
+
+================= EXP =================
+<form action="/action_page.php" novalidate>
+=======================================
+
+-->

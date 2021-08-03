@@ -1,0 +1,108 @@
+<!--  
+Tag HTML <canvas> digunakan untuk menggambar grafik, dengan cepat, melalui skrip (biasanya JavaScript).
+
+Untuk mempelajari lebih lanjut tentang <canvas>, silakan baca tutorial Kanvas HTML kami.
+
+
+* Colors, Styles, and Shadows
+
+     Property	                     Description
+  => fillStyle	                     Mengatur atau mengembalikan warna, gradien, atau pola yang digunakan untuk mengisi gambar
+  => strokeStyle	                  Mengatur atau mengembalikan warna, gradien, atau pola yang digunakan untuk goresan
+  => shadowColor	                  Mengatur atau mengembalikan warna yang akan digunakan untuk bayangan
+  => shadowBlur	                  Mengatur atau mengembalikan tingkat blur untuk bayangan
+  => shadowOffsetX	               Mengatur atau mengembalikan jarak horizontal bayangan dari bentuk
+  => shadowOffsetY	               Mengatur atau mengembalikan jarak vertikal bayangan dari bentuk
+
+     Method	                        Description
+  => createLinearGradient()	      Membuat gradien linier (untuk digunakan pada konten kanvas)
+  => createPattern()	               Mengulangi elemen tertentu ke arah yang ditentukan
+  => createRadialGradient()	      Membuat gradien radial/melingkar (untuk digunakan pada konten kanvas)
+  => addColorStop()	               Menentukan warna dan menghentikan posisi dalam objek gradien
+
+* Line Styles
+
+     Property	                     Description
+  => lineCap	                     Menyetel atau mengembalikan gaya penutup akhir untuk sebuah garis
+  => lineJoin	                     Mengatur atau mengembalikan jenis sudut yang dibuat, ketika dua garis bertemu
+  => lineWidth	                     Mengatur atau mengembalikan lebar garis saat ini
+  => miterLimit	                  Mengatur atau mengembalikan panjang mitra maksimum
+
+* Rectangles
+
+     Method	                        Description
+  => rect()	                        Membuat persegi panjang
+  => fillRect()	                  Menggambar persegi panjang "terisi"
+  => strokeRect()	                  Menggambar persegi panjang (tanpa isian)
+  => clearRect()	                  Menghapus piksel yang ditentukan dalam persegi panjang tertentu
+
+* Paths
+
+     Method	                        Description
+  => fill()	                        Mengisi gambar saat ini (jalur)
+  => stroke()	                     Sebenarnya menggambar jalur yang telah Anda tetapkan
+  => beginPath()	                  Memulai jalur, atau mengatur ulang jalur saat ini
+  => moveTo()	                     Memindahkan jalur ke titik yang ditentukan di kanvas, tanpa membuat garis
+  => closePath()	                  Membuat jalur dari titik saat ini kembali ke titik awal
+  => lineTo()	                     Menambahkan titik baru dan membuat garis ke titik itu dari titik yang ditentukan terakhir di kanvas
+  => clip()	                        Klip wilayah dalam bentuk dan ukuran apa pun dari kanvas asli
+  => quadraticCurveTo()	            Membuat kurva Bézier kuadrat
+  => bezierCurveTo()	               Membuat kurva Bézier kubik
+  => arc()	                        Membuat busur/kurva (digunakan untuk membuat lingkaran, atau bagian dari lingkaran)
+  => arcTo()	                     Membuat busur/kurva antara dua garis singgung
+  => isPointInPath()	               Mengembalikan nilai true jika titik yang ditentukan berada di jalur saat ini, jika tidak salah
+
+* Transformations
+
+     Method	                        Description
+  => scale()	                     Skala gambar saat ini lebih besar atau lebih kecil
+  => rotate()	                     Memutar gambar saat ini
+  => translate()	                  Memetakan ulang posisi (0,0) di kanvas
+  => transform()	                  Mengganti matriks transformasi saat ini untuk gambar
+  => setTransform()	               Mereset transformasi saat ini ke matriks identitas. Kemudian jalankan transformasi()
+
+* Text
+
+     Property	                     Description
+  => font	                        Mengatur atau mengembalikan properti font saat ini untuk konten teks
+  => textAlign	                     Mengatur atau mengembalikan perataan saat ini untuk konten teks
+  => textBaseline	                  Mengatur atau mengembalikan garis dasar teks saat ini yang digunakan saat menggambar teks
+  
+     Method	                        Description
+  => fillText()                 	   Menggambar teks "terisi" di kanvas
+  => strokeText()	                  Menggambar teks di kanvas (tanpa isian)
+  => measureText()	               Mengembalikan objek yang berisi lebar teks yang ditentukan
+
+* Image Drawing
+
+     Method	                        Description
+  => drawImage()	                  Menggambar gambar, kanvas, atau video ke kanvas
+
+* Pixel Manipulation
+
+     Property	                     Description
+  => width	                        Mengembalikan lebar objek ImageData
+  => height	                        Mengembalikan ketinggian objek ImageData
+  => data	                        Mengembalikan objek yang berisi data gambar dari objek ImageData tertentu
+
+     Method	                        Description
+  => createImageData()	            Membuat objek ImageData baru yang kosong
+  => getImageData()	               Mengembalikan objek ImageData yang menyalin data piksel untuk persegi panjang yang ditentukan pada kanvas
+  => putImageData()	               Menempatkan data gambar (dari objek ImageData tertentu) kembali ke kanvas
+
+* Compositing
+
+     Property	                     Description
+  => globalAlpha	                  Mengatur atau mengembalikan nilai alfa atau transparansi gambar saat ini
+  => globalCompositeOperation	      Mengatur atau mengembalikan cara gambar baru digambar ke gambar yang sudah ada
+
+* Other
+
+     Method	                        Description
+  => save()	                        Menyimpan status konteks saat ini
+  => restore()	                     Mengembalikan status dan atribut jalur yang disimpan sebelumnya
+  => createEvent()	 
+  => getContext()	 
+  => toDataURL()
+
+  -->

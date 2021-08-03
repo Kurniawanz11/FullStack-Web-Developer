@@ -1,0 +1,98 @@
+<!--  
+Apa itu HTTP?
+Hypertext Transfer Protocol (HTTP) dirancang untuk memungkinkan komunikasi antara klien dan server.
+
+HTTP berfungsi sebagai protokol permintaan-tanggapan antara klien dan server.
+
+Contoh: Seorang klien (browser) mengirimkan permintaan HTTP ke server; kemudian server mengembalikan respons ke klien. Tanggapan berisi informasi status tentang permintaan dan mungkin juga berisi konten yang diminta.
+
+
+* HTTP Methods
+  => GET
+  => POST
+  => PUT
+  => HEAD
+  => DELETE
+  => PATCH
+  => OPTIONS
+
+  Dua metode HTTP yang paling umum adalah: GET dan POST.
+
+
+  * The GET Method
+
+GET digunakan untuk meminta data dari sumber daya tertentu.
+
+GET adalah salah satu metode HTTP yang paling umum.
+
+Perhatikan bahwa string kueri (pasangan nama/nilai) dikirim dalam URL permintaan GET:
+
+exp : /test/demo_form.php?name1=value1&name2=value2
+
+ # Beberapa catatan lain tentang permintaan GET:
+
+    => GET permintaan dapat di-cache
+    => GET permintaan tetap ada di riwayat browser
+    => GET permintaan dapat di-bookmark
+    => GET Permintaan tidak boleh digunakan saat berurusan dengan data sensitif
+    => GET permintaan memiliki batasan panjang
+    => GET Permintaan hanya digunakan untuk meminta data (tidak mengubah)
+
+* The POST Method
+
+POST digunakan untuk mengirim data ke server untuk membuat/memperbarui sumber daya.
+
+Data yang dikirim ke server dengan POST disimpan di badan permintaan permintaan HTTP:
+
+exp : POST /test/demo_form.php HTTP/1.1
+      Host: w3schools.com
+      name1=value1&name2=value2
+
+POST adalah salah satu metode HTTP yang paling umum.
+
+ # Beberapa catatan lain tentang permintaan POST:
+
+    => POST Permintaan tidak pernah di-cache
+    => POST Permintaan tidak ada dalam riwayat browser
+    => POST Permintaan tidak dapat di-bookmark
+    => POST Permintaan tidak memiliki batasan panjang data
+
+
+* The PUT Method
+
+PUT digunakan untuk mengirim data ke server untuk membuat/memperbarui sumber daya.
+
+Perbedaan antara POST dan PUT adalah bahwa permintaan PUT bersifat idempoten. Artinya, memanggil permintaan PUT yang sama beberapa kali akan selalu menghasilkan hasil yang sama. Sebaliknya, memanggil permintaan POST berulang kali memiliki efek samping membuat sumber daya yang sama beberapa kali.
+
+* The HEAD Method
+
+HEAD hampir identik dengan GET, tetapi tanpa badan respons.
+
+Dengan kata lain, jika GET /users mengembalikan daftar pengguna, maka HEAD /users akan membuat permintaan yang sama tetapi tidak akan mengembalikan daftar pengguna.
+
+Permintaan HEAD berguna untuk memeriksa permintaan GET apa yang akan dikembalikan sebelum benar-benar membuat permintaan GET - seperti sebelum mengunduh file besar atau badan respons.
+
+* The DELETE Method
+
+Metode DELETE menghapus sumber daya yang ditentukan.
+
+* The OPTIONS Method
+Metode OPTIONS menjelaskan opsi komunikasi untuk sumber daya target.
+
+* Compare GET vs. POST
+Tabel berikut membandingkan dua metode HTTP: GET dan POST.
+
+ 	                                              GET	                                                                                POST
+BACK button/Reload	                            Harmless	                                                                        Data will be re-submitted (the browser should alert the user that the data are about to be re-submitted)
+Bookmarked	                                    Can be bookmarked	                                                                Cannot be bookmarked
+Cached	                                        Can be cached	                                                                    Not cached
+Encoding type	                                  application/x-www-form-urlencoded	                                                application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
+History	                                        Parameters remain in browser history	                                            Parameters are not saved in browser history
+Restrictions on data length	                    Yes, when sending data, the GET method adds the data to the URL; 
+                                                and the length of a URL is limited (maximum URL length is 2048 characters)	        No restrictions
+Restrictions on data type	                      Only ASCII characters allowed	No restrictions. Binary data is also allowed
+Security	                                      GET is less secure compared to POST because data sent is part of the URL
+                                                Never use GET when sending passwords or other sensitive information!	            POST is a little safer than GET because the parameters are not stored in browser history or in web server logs
+Visibility	                                    Data is visible to everyone in the URL	                                            Data is
+
+-->

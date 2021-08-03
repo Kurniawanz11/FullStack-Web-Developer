@@ -1,0 +1,76 @@
+<!--  
+HTML Error Messages
+
+Saat browser meminta layanan dari server web, kesalahan mungkin terjadi, dan server mungkin mengembalikan kode kesalahan seperti "404 Tidak Ditemukan".
+
+Adalah umum untuk menamai kesalahan ini dengan pesan kesalahan HTML.
+
+Tapi pesan ini adalah sesuatu yang disebut pesan status HTTP. Faktanya, server selalu mengembalikan pesan untuk setiap permintaan. Pesan yang paling umum adalah 200 OK.
+
+Di bawah ini adalah daftar pesan status HTTP yang mungkin dikembalikan:
+
+
+* 1xx: Information
+
+     Message:	                                 Description:
+  => 100 Continue	                              Server telah menerima header permintaan, dan klien harus melanjutkan untuk mengirim badan permintaan
+  => 101 Switching Protocols	                  Pemohon telah meminta server untuk mengganti protokol
+  => 103 Checkpoint	                           Digunakan dalam proposal permintaan yang dapat dilanjutkan untuk melanjutkan permintaan PUT atau POST yang dibatalkan
+
+* 2xx: Successful
+
+     Message:	                                 Description:
+  => 200 OK	                                    Permintaannya OK (ini adalah respons standar untuk permintaan HTTP yang berhasil)
+  => 201 Created	                              Permintaan telah dipenuhi, dan sumber daya baru dibuat
+  => 202 Accepted	                              Permintaan telah diterima untuk diproses, tetapi pemrosesan belum selesai
+  => 203 Non-Authoritative Information	         Permintaan telah berhasil diproses, tetapi mengembalikan informasi yang mungkin berasal dari sumber lain
+  => 204 No Content	                           Permintaan telah berhasil diproses, tetapi tidak mengembalikan konten apa pun
+  => 205 Reset Content	                        Permintaan telah berhasil diproses, tetapi tidak mengembalikan konten apa pun, dan mengharuskan pemohon mengatur ulang tampilan dokumen document
+  => 206 Partial Content	                     Server hanya mengirimkan sebagian dari sumber daya karena header rentang yang dikirim oleh klien
+
+* 3xx: Redirection
+
+     Message:	                                 Description:
+  => 300 Multiple Choices	                     Daftar tautan. Pengguna dapat memilih tautan dan pergi ke lokasi itu. Maksimal lima alamat 
+  => 301 Moved Permanently	                     Halaman yang diminta telah dipindahkan ke URL baru
+  => 302 Found	                                 Halaman yang diminta telah dipindahkan sementara ke URL baru
+  => 303 See Other	                           Halaman yang diminta dapat ditemukan di bawah URL yang berbeda
+  => 304 Not Modified	                        Menunjukkan halaman yang diminta belum diubah sejak terakhir diminta
+  => 306 Switch Proxy	                        Tidak lagi digunakan
+  => 307 Temporary Redirect	                  Halaman yang diminta telah dipindahkan sementara ke URL baru
+  => 308 Resume Incomplete	                     Digunakan dalam proposal permintaan yang dapat dilanjutkan untuk melanjutkan permintaan PUT atau POST yang dibatalkan
+
+* 4xx: Client Error
+
+     Message:	                                 Description:
+  => 400 Bad Request	                           Permintaan tidak dapat dipenuhi karena sintaks yang buruk
+  => 401 Unauthorized	                        Permintaan tersebut merupakan permintaan hukum, tetapi server menolak untuk menanggapinya. Untuk digunakan ketika otentikasi dimungkinkan tetapi gagal atau belum disediakan
+  => 402 Payment Required	                     Dicadangkan untuk penggunaan di masa mendatang
+  => 403 Forbidden	                           Permintaan itu adalah permintaan hukum, tetapi server menolak untuk menanggapinya
+  => 404 Not Found	                           Halaman yang diminta tidak dapat ditemukan tetapi mungkin tersedia lagi di masa mendatang
+  => 405 Method Not Allowed	                  Permintaan dibuat dari halaman menggunakan metode permintaan yang tidak didukung oleh halaman itu
+  => 406 Not Acceptable	                        Server hanya dapat menghasilkan respons yang tidak diterima oleh klien
+  => 407 Proxy Authentication Required	         Klien harus terlebih dahulu mengotentikasi dirinya dengan proxy
+  => 408 Request Timeout	                     Server kehabisan waktu menunggu permintaan
+  => 409 Conflict	                              Permintaan tidak dapat diselesaikan karena konflik dalam permintaan
+  => 410 Gone	                                 Halaman yang diminta tidak lagi tersedia
+  => 411 Length Required	                     "Panjang Konten" tidak ditentukan. Server tidak akan menerima permintaan tanpa itu
+  => 412 Precondition Failed	                  Prasyarat yang diberikan dalam permintaan yang dievaluasi salah oleh server
+  => 413 Request Entity Too Large	            Server tidak akan menerima permintaan, karena entitas permintaan terlalu besar
+  => 414 Request-URI Too Long	                  Server tidak akan menerima permintaan, karena URL terlalu panjang. Terjadi saat Anda mengonversi permintaan POST menjadi permintaan GET dengan informasi kueri yang panjang
+  => 415 Unsupported Media Type	               Server tidak akan menerima permintaan, karena jenis media tidak didukung
+  => 416 Requested Range Not Satisfiable	      Klien telah meminta sebagian dari file, tetapi server tidak dapat menyediakan bagian itu
+  => 417 Expectation Failed	                  Server tidak dapat memenuhi persyaratan bidang tajuk permintaan Harapkan
+
+* 5xx: Server Error
+
+     Message:	                                 Description:
+  => 500 Internal Server Error	               Pesan kesalahan umum, diberikan ketika tidak ada pesan yang lebih spesifik yang cocok
+  => 501 Not Implemented	                     Server tidak mengenali metode permintaan, atau tidak memiliki kemampuan untuk memenuhi permintaan
+  => 502 Bad Gateway	                           Server bertindak sebagai gateway atau proxy dan menerima respons yang tidak valid dari server upstream
+  => 503 Service Unavailable	                  Server saat ini tidak tersedia (overload atau down)
+  => 504 Gateway Timeout	                     Server bertindak sebagai gateway atau proxy dan tidak menerima respons tepat waktu dari server hulu
+  => 505 HTTP Version Not Supported	            Server tidak mendukung versi protokol HTTP yang digunakan dalam permintaan
+  => 511 Network Authentication Required	      Klien perlu m
+  
+  -->
