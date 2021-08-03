@@ -1,0 +1,64 @@
+Float merupakan properti pada CSS untuk mengatur posisi sebuah elemen. sebuah elemen dapat dipaksa untuk berada di sebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini.
+float ini tipnenya => Out-of Flow
+
+=========== Normal Flow VS Out-of Flow =================
+    => perilaku dari elemen-elemen ketika kasih CSS, yang sudah dibuat adalah normal flow 
+
+========================================================
+
+=========== Float =================
+    => none 
+    => right 
+    => left 
+===================================
+
+=========== yang bisa dilakukan menggunakan properti float =================
+    => text-wrapping                : membuat teks mengelilingi gambar / elemen lain 
+    => image gallery                : membuat serangkaian gambar menjadi galeri 
+    => multi-column layout          : membuat halaman memiliki beberapa kolom
+    => dll  
+============================================================================
+
+
+======================= Float Clear =======================
+    cara menghentikan / membersihkan float 
+=> menggunakan property overflow 
+=> menggunakan <div> kosong 
+    solusi tepat membersihkan float adalah menggunakan property CSS Clear 
+    ==================== CSS Clear ==========================
+        => left             : membersihkan yang kiri 
+        => right            : membersihkan yang kanan 
+        => both             : membersihkan kiri dan kanan
+=========================================================
+=> mengganti teknik micro clearfix 
+    ==================== Micro clearfix by nicolas =========================
+    /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+    ========================================================================
+
+===========================================================

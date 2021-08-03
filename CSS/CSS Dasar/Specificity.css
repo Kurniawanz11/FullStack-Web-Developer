@@ -1,0 +1,19 @@
+CSS Specificity adalah setiap deklarasi CSS (selector) memiliki Berat yang berbeda. 
+                        Berat tersebut menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector
+
+
+
+                          inline            id              class               element 
+                            0               0                  0                   0
+    #p1 =                   0               1                  0                   0
+    p                       0               0                  0                   1
+    ul#sarapan li           0               1                  0                   2
+    .favorit                0               0                  1                   0
+    ul#sarapan li.favorit   0               1                  1                   2
+
+
+    tips : 
+        => buat elemen yang diinginkan agar menjadi lebih spesifik
+        => tambahkan beban pada elemen tersebut agar semakin berat 
+
+note : online Specificity calculator 

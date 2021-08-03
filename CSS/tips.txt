@@ -1,0 +1,18 @@
+
+
+
+* <Article>
+=> Elemen <article> bertindak sebagai container untuk independen konten pada sebuah halaman, 
+    artinya konten utuh yang tidak terkait dengan konten lain. Bisa saja konten yang dimasud berupa artikel blog, komentar, forum post, dan konten lainnya.
+=> Jika sebuah halaman terdapat beberapa artikel, maka tiap artikel tersebut seharusnya berada pada elemen article-nya masing-masing.
+=> Elemen <article> dapat berada pada elemen <article> lainnya (nested) selama artikel tersebut berkaitan dengan induk elemen <article> yang menampungnya.
+
+* <aside>
+=> Elemen <aside> memiliki dua tujuan, tergantung kita menempatkannya di dalam sebuah elemen <article> atau tidak.
+K=> etika elemen ini ditempatkan di dalam elemen <article>, pada elemen ini dapat berisikan informasi yang berhubungan dengan artikel tersebut, tetapi bukan bagian dari konten artikelnya itu sendiri (dipisahkan dari konten utama). 
+=> Ketika elemen ini ditempatkan di luar dari elemen <article>, pada elemen ini dapat berisikan informasi yang berhubungan pada keseluruhan halaman.
+=> Elemen <aside> biasanya terletak di samping dari sebuah elemen yang menampungnya. 
+
+* <section>  
+=> Sebuah elemen yang memiliki kesamaan konten dan memiliki sebuah heading di dalamnya dapat dikelompokkan dengan menggunakan elemen <section>. Dengan begitu elemen ini dapat digunakan pada sebuah elemen <article> yang memiliki konten panjang dan berpotensi untuk dikelompokkan.
+=> Di dalam sebuah <section> sebaiknya terdapat elemen heading (h1 - h6), yang menjadi elemen pertama yang dituliskan pada sebuah section untuk menunjukkan judul atau tema dari bagian konten yang dikelompokkan.

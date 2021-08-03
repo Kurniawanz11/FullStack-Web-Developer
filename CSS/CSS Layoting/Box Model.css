@@ -1,0 +1,66 @@
+============================ BOX MODEL =================================
+    => setiap elemen di halaman berada di dalam sebuah box (kotak)
+    => kita bisa mengatur ukuran dan posisi kotak tersebut
+    => kita bisa memberi warna / gambar sebagai background kotak tersebut.
+
+    => CSS box model mendefinisikan 'kotak' yang dihasilkan oleh sebuah dokumen, lalu menampilkannya sesuai dengan format visualnya.
+    => CSS box model terdiri dari margin, border, padding, dan content 
+    
+    => margin       : area transparan disekitar kotak (diluar borer)
+    => padding      : area transparan didalam kotak (antara content dan border) 
+    => border       : batas sekeliling content dan padding 
+    => content      : konten seharusnya didalam box, bisa berupa teks atau gambar 
+
+    ================== Properti untuk margin, padding & border ================
+    - margin-top             - padding-top                  - border-top
+    - margin-right           - padding-right                - border-right 
+    - margin-bottom          - padding-bottom               - border-bottom 
+    - margin-left            - padding-left                 - border-left 
+    - margin                 - padding                      - border  
+
+    ===========================================================================
+
+====== overlaping margin ======= 
+=> terjadi ketika menggabungkan 2 buah margin biasanya kiri dan kanan atau atas dan bawah
+
+================================
+
+====== negatif margin ======= 
+=> margin bisa kita kasih nilai negatif
+
+================================
+
+====== auto margin ======= 
+=> nilai yang kita kasih/atur ke margin khusus margin kiri dan kanan
+
+================================
+
+========== shorthand =========== 
+=> penyingkatan dalam margin 
+=> jika ada 2 nilai : atas-bawah dan kiri-kanan 
+=> jika ada 3 nilai : atas - kiri dan kanan - bawah 
+=> jika ada 4 nilai : atas - kanan - bawah - kiri
+
+================================
+
+
+========================= PADDING =========================
+    => padding tidak bisa diberi nilai negatif
+    => padding tidak memiliki nilai auto 
+    => padding menambah ukuran elemen / mempengaruhi ukuran boxyang dibuat
+
+=========================================================== 
+
+========================= BORDER =========================
+    => border : width style color;
+    => style : solid, dotted, dashed, double 
+    => border juga menambah ukuran elemen / mempengaruhi ukuran box yang dibuat 
+===========================================================
+
+note : untuk cara mengatasi pengaruh atau penambahan ukuran box/elemen dari padding dan border, kita bisa meggunakan porperti box-sizing (CSS 3)
+
+=> biasanya ketika akan membuat sebuah elemen kita atur lebarnya saja, untuk tingginya tidak / jarang diatur karena menyesuaikan isi kontennya, semakin banyak kontennya maka semakin tinggi.
+   jika tingginya di kasih nilai, nanti ketika kontenya lebih besar dari tingginya, itu nanti akan keluar dari kontennya (bisa di akalin pake overflow, tapi cukup merepotkan juga,intinya susuaikan saja).
+
+
+========================================================================

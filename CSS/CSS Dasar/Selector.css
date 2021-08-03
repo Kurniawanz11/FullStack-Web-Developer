@@ -1,0 +1,26 @@
+/*  
+selector { property : value; }
+
+ 1. Digunakan untuk memilih dan memanipulasi elemen spesifik pada HTML
+ 2. Elemen HTML dipilih berdasarkan tag, id, class bahkan pola / pattern 
+ 3. Semakin kompleks struktur HTML, selector juga bisa semakin kompleks/spesifik 
+
+ * selector digunakan pada css untuk mengenali sebuah element HTML yang akan di beri styleS 
+    => separator (, atau dan) : ketika menggabungkan banyak selector
+        exp : h1, h2 {}
+    => space artinya itu di dalam 
+       exp :  ul li li {}
+
+* Element HTML
+* id
+    1. sebuah elemen HTML hanya boleh memiliki 1 id
+    2. Setiap halaman hanya boleh memiliki 1 elemen dengan id tersebut
+    3. Dapat digunakan sebagai penanda halaman untuk link 
+    4. Digunakan juga untuk javascript
+    5. Sebaiknya tidak digunakan untuk CSS (lebih baik gunakan class)
+* class 
+    1. 
+* complex selector 
+
+*/
+

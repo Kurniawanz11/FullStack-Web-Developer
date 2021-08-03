@@ -1,0 +1,187 @@
+/*  
+* Border Radius 
+    => membuat ujung kotak sebuah elemen menjadi tumpul, semakin besar nilai value yang kita berikan, maka semakin tumpul sampai membentuk sebuah lingkaran 
+    
+
+* Opacity 
+    => membuat elemen menjadi transparan
+    => nilainya dari 0 - 1 exp : (0.5 / .5) 
+    => memberi transparan pada elemen
+
+note/tips : ketika kita ingin membuat elemen child dari parent menjadi solid, dan parentnya transparan.  kita tidak bisa menggunakan properti Opacity (karena ketika elemen parentnya transparan dan maka childnya juga akan ikut transparan mengikuti elemen parentnya. jika kita atur opacity pada elemen childnya maka, elemen childnya akan lebih transparan dari elemen parentnya). 
+            jadi gunakan properti RGBA/HSLA (karena yang kita beri transparannya pada warna bukan elemennya lagi)
+
+* RGBA & HSLA 
+    => RGBA (Red, Green, Blue, alpha)
+    => memberi transparansi pada warna 
+
+    => HSLA (Hue, Saturation, Lightness, alpha)
+        => Hue              : roda warna, ketika di ubah nilai angkanya, maka akan berubah juga warnanya
+        => Saturation       : nilainya dari 0 - 100%. 100% artinya warnanya murni dari Hue yang di pilih, jika kita kurangi nilainya maka akan bergerak ke arah putih. (exp : bisa di coba di photoshops)
+        => Lightness        : semakin besar nilainya maka semakin terang, semakin kecil nilanya maka akan semakin gelap
+
+* Box Shadow 
+    => memberikan bayangan pada elemen 
+    => multiple shadow : memberikan lebih 1 bayangan dari sebuah elemen (gunakan tanda "," sebagai pembatasnya)
+  
+  =================== Box Shadow =====================
+    => inset                            : membuat bayangan menjadi di dalam elemen / kotaknya 
+    => x-offset, y-offset               : ukuran bayangan dari sumbu x dan y (bisa bernilai negatif)
+    => blur                             : membuat bayangan menjadi blur 
+    => spead                            : ukuran bayangan
+    => color                            : membuat warna bayangn 
+
+    exp : x-offset, y-offset, blur, spread, color
+  ====================================================
+
+  * Text Shadow
+    => tidak memiliki inset dan spread 
+        exp : x-offset, y-offset, blur, color 
+    => penggunaannya hampir sama dengan box-shadow 
+    
+ =========================================================
+
+ * Linear Gradient 
+    => bukan properti CSS 3, melainkan value untuk background-image 
+    => memberikan gradasi warna secara garis lurus
+    => sintaks sederhana (background-image: linear-gradient(warna awal, warna akhir);) / background : linear-gradient(warna awal, warna akhir);)
+    => kita juga bisa menamabahkan banyak warna dengan menamabahkan tanda "," sebagai pembatasnya 
+    => sintaks lengkap (background: linear-gradient(sudut | arah, warna awal, warna akhir);)
+     ====== ARAH ========== diagonal ========
+     - to bottom            to left top 
+     - to top               to left bottom 
+     - to left              to right top 
+     - to right             to right bottom 
+     ========================================
+     => color stop          :  kita  bisa memberikan bobot warna yang berbeda 
+
+* Radial Gradient 
+    => elips dan circle 
+    => sisi terdekat dan sisi terjauh
+    => memberikan gradasi warna secara melingkar
+    => sintaks sederhana (background-image: radial-gradient(warna awal, warna akhir);)
+    => multiple color (background-image: radial-gradient(warna-1, warna-2, ..... warna-n);)
+    => kita bisa mengatur bobot warnanya juga dengan color stop seperti pada linear gradient 
+    => sintaks lengkap (background: radial-gradient(tipe, jangkauan at posisi-y, posisi-x, warna-1, warna-2, .... warna-n);)
+       => tipe              : ellipse & circle 
+       => jangkauan         : jarak dari pusat gradient ke sisi terluar-nya 
+            => closest-corner       : jarak dari pusat gradient ke sudut terdekat elemen 
+            => closest-side         : jarak dari pusat gradient ke sisi terdekat elemen 
+            => farthest-corner      : jarak dari pusat gradient ke sudut terjauh elemen 
+            => farthest-side        : jarak dari pusat gradient ke sisi terjauh elemen 
+       => at posisi-y       : menentukan posisi dari pusat gradient dari sumbu y
+            => top 
+            => center 
+            => bottom
+            note : dengan satuan unit PX       
+       => at posisi-x       : menentukan posisi dari pusat gradient dari sumbu x
+            => top 
+            => center 
+            => bottom
+            note : dengan satuan unit PX   
+
+* Font Face 
+
+* Web Font Generator 
+
+* Vendor Prefixes 
+    => sintaks khusus yang harus di tambahkan untuk beberapa property CSS 3
+    => sintaks spesifik untuk tiap browser / Vendor
+    => prefix / awalan 
+    ========== Vendor Prefixes ==============
+    => -webkit-<properti-css3>                 : chrome, safari, opera versi terbaru    
+    => -moz-<properti-css3>                    : firefox 
+    => -ms-<properti-css3>                     : internet explorer 
+    => -o-<properti-css3>                      : opera versi terdahulu
+    =========================================
+
+    => property CSS 3 apa saja yang butuh vendor prefixes 
+        => bisa di cek di website shouldiprefix.com 
+        => caniuse.com 
+        => https://pleeease.io/play/
+        => emmet untuk memudahkan menamabahkan vendor prefixes 
+
+* Filter 
+    => properti CSS 3 yang digunakan untuk memberi efek visual pada gambar, background, atau border 
+    =============== TIPE FIlTER ==================
+    - blur          - grayscale          - invert 
+    - brightness    - sepia              - opacity
+    - contrast      - hue-rotate         - drop-shadow 
+    - saturate 
+    ==============================================
+
+* Transform
+
+* Transition 
+    => properti transition memungkinkan kita dapat mengubah nilai dari property HTML secara halus 
+    => transition vs animation 
+    => sintaks transition :
+        => property     :
+            => all 
+            => <nama property>
+            => none 
+       ================== animatable properties ========================
+        - background-color                  - top left bottom right 
+        - background-position               - margin padding 
+        - background-size                   - width height 
+        - border                            - opacity 
+        - color                             - transform 
+        - fiter                             - word-spacing 
+        - font-size                         - letter-spacing 
+        - line-height                         dll... 
+       =================================================================     
+
+       ================== animatable properties ========================
+        - font-family 
+        - display 
+        - position 
+           dll... 
+       ================================================================= 
+
+        => durasi       : angka dengan satuan s / ms
+        => fungsi       : fungsi transisi / timing function 
+        ====================== Timing Function ===================
+        - ease                         
+        - ease-in 
+        - ease-out 
+        - ease-in-out 
+        - linear 
+        - cubiz-bezier (w,x,y,z)
+        ==========================================================
+        => delay        : angka dengan satuan s / ms
+
+
+* Animation     
+    ============== sintaks animation ==================
+    @keyframes [name] {
+        from {
+            [property-CSS]
+        }
+        to {
+            [property-CSS]
+        }
+    }
+    ===================================================
+    => animation:
+        -> [name]                   : nama animasi yang harus sama dengan keyframes yang dibuat 
+        -> [duration]               : angka dengan satuan s / ms
+        -> [timing-function]        : angka dengan satuan s / ms
+        -> [delay]                  : angka dengan satuan s / ms
+        -> [iteration-count]        
+            -> angka                    : mau berapa kali pengulangannya
+            -> infinite                 : atau di ulang terus menerus
+        -> [direction]              
+            -> normal                   : nilai default, animasinya berjalan dari awal hingga akhir 
+            -> reverse                  : dari akhir baru ke awal 
+            -> alternate                : dari awal sampai akhir , dari akhir sampai ke awal (bolak-balik)
+            -> alternate-reverse        : dari akhir sampi awal, dari awal sampai ke akhir (kebalikannya)
+        -> [fill-mode]              : menentukan akhir dari transisi seperti apa
+            -> none                     : tidak terjadi apa-apa
+            -> forwards                 : 
+            -> backwards                : 
+            -> both                     : 
+        -> [play-state]            
+            -> running                  : nilai defaultnya 
+            -> paused                   :
+
+            */

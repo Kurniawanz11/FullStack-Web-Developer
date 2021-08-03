@@ -1,0 +1,5 @@
+kenapa menggunakan CSS 3 ?
+1. Membuat website menjadi lebih fleksibel
+2. Membuat mock-up dengan cepat tanpa bantuan bahasa scripting
+3. Mengurangi penggunaan gambar = kecepatan load halaman
+4. Penggunaan selector untuk menghindari penggunaan markup yang boros 

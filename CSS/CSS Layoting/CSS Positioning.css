@@ -1,0 +1,22 @@
+
+
+
+========== VAlUE Position ===============
+    => static            
+        => static adalah nilai default dari tiap elemen ketika tidak diberi properti position 
+        => menggunakan position selain static (non-static) akan membuat sebuah elemen menjadi seolah-olah berbbeda dimensi dari elemen lainnya. 
+        => Elemen yang diberi position selain static dapat menggunakan properti top, left, bottom dan right untuk mengatur posisinya.
+    => relative              
+        => elemen yang awalnya berada di flow normal, lalu diberi nilai position relative, maka akan keluar dari flow normal dan maju 1 dimensi (out-of flow) 
+        => ketika kita menggerakan elemen dengan posisi relative (menggunakan properti top, left, bottom, dan right). ruang yang ditempati oleh elemen tersebut masih ada
+        => ketika menggerakan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya
+        => jika kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya.
+    => absolute               
+        => ketika kita menggerakkan elemen dengan posisi absolute (menggunakan properti top, left, bottom dan right). ruang yang ditempati oleh elemen tersebut dianggap tidak ada.
+        => ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dari elemen parentnya (exp : body)
+           Selama elemen parent-nya memiliki posisi yang juga non-static 
+        => jika kita memberi properti top: 0; dan left: 0;, mmaka elemen akan berada di ujung kiri atas elemen dari elemen parentnya.
+    => fixed                  
+        => 
+
+=========================================

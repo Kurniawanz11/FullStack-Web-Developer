@@ -1,0 +1,42 @@
+
+=> Atribut HTML 
+    -> Atribut Global
+=> Paragraf
+=> Heading (h1-h6)
+=> List 
+    -> Unordered lists : daftar yang ditampilkan tidak memiliki urutan. 
+    -> Ordered lists : daftar yang ditampilkan secara terurut.
+    -> Description lists 
+============ NILAI ========================================================
+Nilai                      Deskripsi
+  1                       Menggunakan angka dalam urutan item (default)
+  a                       Menggunakan huruf kecil dalam urutan item
+  A                       Menggunakan huruf besar dalam urutan item
+  i                       Menggunakan huruf romawi kecil dalam urutan item
+  I                       Menggunakan huruf romawi besar dalam urutan item
+============================================================================
+=> Gambar 
+    => <img>
+
+=> Teks Terformat
+     => <blockquote>    (Long quotations)
+        ->  konten kita memiliki sebuah kutipan ataupun sebuah testimonial
+        -> dapat berupa sebuah paragraf, heading, ataupun list
+        -> 
+     => <pre>           (Preformatted text)
+     => <figure>.       (Figure) 
+        -> digunakan untuk merepresentasikan konten tersendiri (self-contained content) seperti ilustrasi, diagram, foto atau bisa juga sebuah baris kode. Banyak hal yang dapat digunakan dalam elemen ini.
+
+=> Inline Formatting Text
+    => Anchor
+        -> merupakan elemen yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email, atau URL lainnya.
+        -> Untuk menggunakan elemen ini kita gunakan tag <a>...</a> bersama dengan atribut href untuk menetapkan sebuah target yang akan dituju. 
+    => Emphasized text
+        -> Gunakan elemen <em> untuk menunjukan bagian kata yang perlu kita tekankan.
+        -> Elemen ini menunjukan stress emphasis atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus
+    => Important text
+        -> Gunakan elemen <strong> untuk menunjukan sebuah teks yang begitu penting (strong importance), serius, ataupun mendesak.
+        
+    => Short quotations
+        => Gunakan elemen <q> untuk menandai sebuah kutipan dalam sebuah teks. Elemen short quations berbeda dengan <blockquote>. Elemen ini digunakan untuk kutipan pendek yang terletak di dalam baris (inline).
+    => 
