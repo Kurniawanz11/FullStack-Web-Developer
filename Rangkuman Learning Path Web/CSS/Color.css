@@ -1,0 +1,49 @@
+/* 
+* Menetapkan Nilai Warna
+=> Setiap warna pada layar komputer kita terdiri dari campuran warna merah, hijau, dan biru.
+=> Layar komputer dibuat dari ribuan kotak kecil yang biasa disebut pixel.
+=> Di dalam pixel terdapat tiga buah lampu kecil berwarna merah, hijau, dan biru. Ribuan warna dapat dihasilkan dari kombinasi tiga warna tersebut.
+=> Untuk menetapkan nilai warna pada CSS kita dapat menggunakan Numeric Value dan Predefined Color Name. 
+
+
+* Numeric Value
+=> Cara yang paling banyak digunakan dalam menetapkan warna adalah  dengan menggunakan numeric value. 
+Berikut contoh penulisan nilai warna pada CSS dengan numeric value:
+exp :
+ Warna hijau menggunakan format RGB 
+color: rgb(78,231,23);
+ 
+ Warna hijau Menggunakan format HEX 
+color: #4ee717;
+ 
+ Warna hijau menggunakan format HSL (hanya di CSS3)
+color: hsl(104, 82%, 50%);
+
+=> Dari kode tersebut kita tahu tidak hanya format RGB yang dapat digunakan dalam menetapkan warna. Selain RGB ada juga format Hex dan HSL (Hue, Saturation, Light).
+
+
+* Predefined Color Name
+=> Menentukan warna bisa juga dilakukan dengan sebuah kata seperti blue, yellow, red dan lainnya
+=> Faktanya, varian warna ada banyak jumlahnya! Hampir seluruh browser saat ini mendukung 140 nama warna,
+
+referensi  https://www.w3schools.com/colors/colors_names.asp
+
+* Opacity
+=> CSS3 mengenalkan properti opacity yang dapat menspesifikasikan nilai transparan pada elemen HTML. 
+=> Nilai dari properti opacity merupakan angka desimal antara 0.0 hingga 1.0, jika kita menetapkan nilainya 0.5 itu berarti 50% transparan.
+=> menetapkan opacity juga dapat kita lakukan pada warna. Untuk melakukannya, gunakan format rgba dan hsla, di mana format ini merupakan format rgb ditambahkan nilai alpha.
+
+* Text Color (Foreground Color)
+=> Nilai dari properti color dapat berupa predefined color name atau sebuah numeric value dengan menggunakan RGB, RGBA, HEX, HSL, ataupun HSLA. 
+
+* Background Color
+=> Properti background-color dapat mengatur warna untuk background dari kotak tersebut. 
+=> Sama seperti text color, kita dapat menspesifikasikan warna yang dipilih dengan numeric values atau dengan predefined color name.
+=> Properti background-color akan bernilai transparan jika tidak kita tetapkan.
+=> Kebanyakan browser menetapkan nilai putih sebagai standar untuk nilai background-color, tetapi nilai standar tersebut dapat pengguna ubah melalui pengaturan browser-nya. Maka untuk memastikan website kita memiliki tampilan background putih, kita dapat terapkan nilai background-color: white; pada elemen <body>.
+=> Biasanya kita juga menerapkan padding saat menetapkan background-color guna memberi jarak antara konten dan pinggiran kotak elemen.
+
+
+
+* note : Properti color dapat diaplikasikan ke seluruh elemen yang ada pada HTML dan nilainya dapat diturunkan pada elemen turunannya.
+*/

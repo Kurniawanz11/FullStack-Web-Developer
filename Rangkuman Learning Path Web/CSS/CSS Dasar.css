@@ -1,0 +1,77 @@
+
+/*  
+=> Cascading Style Sheet atau biasa disingkat CSS merupakan W3C standar yang digunakan untuk mengatur visualisasi  berkas yang ditulis pada HTML
+
+=> Berikut beberapa keuntungan yang didapatkan ketika kita menerapkan CSS.Dapat mengontrol dan menerapkan layout secara presisi. Dengan menggunakan CSS kita bisa membuat sebuah website seperti dokumen cetak dengan desain yang menarik dan presisi.
+=> Menghindari pekerjaan yang berulang-ulang dalam menerapkan styling. Kita dapat menetapkan styling pada beberapa berkas HTML hanya dengan menggunakan satu berkas CSS.
+=> Didukung banyak browser. Seluruh browser saat ini minimal sudah mendukung CSS versi 2. Untuk browser yang populer seperti Chrome dan Firefox sudah mendukung CSS versi 3. 
+
+Bagaimana Style Sheet Bekerja?
+Sebuah style sheet bekerja melalui tahapan berikut:
+=> Dimulai dari sebuah dokumen yang telah ditandai dengan tag elemen HTML.
+=>  Menuliskan aturan styling untuk menentukan bagaimana elemen HTML akan ditampilkan.
+=> Melampirkan aturan styling yang sudah dibuat pada dokumen HTML. Ketika browser memuat dokumen, tampilan elemen yang ditampilkan akan menyesuaikan dengan aturan styling yang sudah ditetapkan.
+
+
+* CSS comments digunakan untuk menjelaskan kode, dan dapat membantu ketika Anda mengedit kode sumber di lain waktu
+
+* ======== External Style Sheet =======
+=> External Style Sheet merupakan berkas terpisah yang di dalamnya hanya terdapat sebuah rules
+=> Berkas ini harus berekstensi .css, dan berkas ini nantinya dihubungkan pada dokumen HTML
+=> Cara ini merupakan yang paling powerful dalam menerapkan styling. Karena dengan cara ini, satu berkas styling (.css) dapat digunakan oleh banyak berkas HTML.
+
+exp: <link rel="stylesheet" href="style.css">
+
+* note : min.css merupakan penamaan format berkas .css yang sudah di-minify atau sudah diminimalkan dengan menghilangkan white space yang tidak digunakan
+======================================
+
+* ======== Embedded Style Sheet =======
+=> Embedded Style Sheet merupakan kumpulan rules yang dituliskan dalam berkas HTML dengan menggunakan elemen <style>
+=> Penulisan rules harus dituliskan dalam elemen <style> dan ditempatkan di dalam <head> dari berkas HTML.
+
+exp: 
+<head>
+   <title>Document Title</title>
+   <style>
+        * Rules styling dituliskan di sini
+    </style>
+</head>
+
+=====================================
+
+* ======== Inline Style Sheet =======
+=> Inline Style merupakan styling yang diterapkan pada elemen HTML dengan menggunakan atribut style.
+=> Untuk menambahkan styling properties lainnya (multiple properties), kita tuliskan dengan menggunakan semicolon (;) sebagai pemisah antar styling properties-nya.
+
+exp:  <h1 style="color: green; margin-top: 2em">Kota Bandung</h1>
+
+===================================
+
+* ======== CSS Conception =======
+=> Sebelum membahas lebih detail mengenai styling, terdapat beberapa konsepsi dalam CSS yang harus kita pahami.
+
+* Inheritance
+=> Styling HTML bersifat inheritance yang artinya dapat mewarisi properti style “tertentu” pada elemen yang ada di dalamnya
+
+* Group Selector
+=> Jika kita menerapkan rule yang sama pada beberapa selector yang berbeda, di CSS kita dapat menggabungkan selector tersebut sehingga dapat meminimalisir penulisan kode yang berulang. 
+=> Gunakan tanda koma (,) untuk memisahkan tiap selector-nya. 
+
+* Rule Order
+=> Sesuai dengan namanya, cascading artinya “mengalir.”
+=> Demikian halnya dengan alur kerja CSS dalam membaca kode yang mengalir dari atas ke bawah
+=> Tetapi kita bisa membuat sebuah property styling agar dianggap penting oleh browser untuk diterapkan dan tidak memperhatikan urutan. Kita bisa menambahkan keyword !important pada akhir nilai propertinya. 
+
+===============================
+
+
+*Ringkasan : 
+Berikut catatan yang sudah kita pelajari sejauh ini tentang styling:
+
+=> Rule : Sebuah aturan styling yang harus diterapkan pada elemen HTML, dalam sebuah rule terdapat selector dan deklarasi properti styling.
+=> Selector : Sebuah bagian dari rule, yang mengidentifikasi target elemen untuk menetapkan sebuah rule.
+=> Declaration : Sebuah bagian dari rule, yang terdiri dari pasangan properti dan nilainya.
+=> External Style Sheet : Berkas terpisah yang di dalamnya hanya terdapat sebuah rules yang akan digunakan pada website.
+=> Embedded Style Sheet : Kumpulan rules yang dituliskan dalam berkas HTML dengan menggunakan elemen <style>.
+=> Inline Style : styling yang diterapkan pada elemen HTML dengan menggunakan atribut style.
+*/

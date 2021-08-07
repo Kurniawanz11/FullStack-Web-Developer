@@ -1,0 +1,54 @@
+/* 
+* Pseudo Selector
+terbagi menjadi dua yaitu 
+=> Pseudo-class
+=> Pseudo-element.
+
+=> selector ini menargetkan elemen pada bagian yang “tidak terlihat” seperti sifat pada elemen, sehingga untuk menetapkannya, kita tidak bisa menggunakan selector biasa.
+=> Salah satu contoh yang paling sering kita terapkan adalah :hover, Pseudo Selector tersebut kita gunakan untuk menetapkan rule ketika cursor diarahkan ke target elemen.
+exp: a:hover {color: blue;}
+=> Contoh kode di atas merupakan salah satu pseudo-class selector dimana elemen anchor akan menerapkan warna biru ketika kursor diarahkan pada elemen tersebut.
+
+
+* Pseudo-class Selector
+=> Pseudo-class merupakan sebuah class “semu” yang sebenarnya ada pada tiap elemen HTML.
+=> Untuk menggunakan pseudo-class kita gunakan tanda titik dua (:) pada basic selector kemudian diikuti dengan pseudo-class nya.
+=> dengan menggunakan selector ini kita dapat memilih elemen berdasarkan class yang tidak nampak pada dokumen.
+===== Rule ======
+=> :visited                 rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi
+=> :hover                   rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor
+=> :link                    rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi
+=> :active                  rule akan diterapkan pada sebuah tautan ketika ditekan
+
+dan masih banyak lagi, referensi https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+=================
+
+
+* Pseudo-elemen Selector
+=> Sama seperti pseudo-class, pseudo-elemen merupakan sebuah elemen “semu” yang sebenarnya ada tetapi tidak tampak secara tertulis pada berkas HTML.
+=> Selector ini biasa digunakan ketika kita ingin menambahkan sebuah konten tepat sebelum dan setelah sebuah elemen paragraf.
+=> Alhasil kita tidak perlu menuliskan struktur elemen tersebut pada berkas HTML.
+=>  Cukup manfaatkan pseudo-elemen ::before dan ::after kemudian tuliskan konten tersebut cukup pada CSS.
+Contohnya kita ingin menambahkan tanda kutip sebelum dan sesudah elemen blockquote.
+exp: 
+blockquote::before,
+blockquote::after {
+   content: '"';
+   font-size: 24px;
+   font-style: italic;
+   font-weight: bold;
+}
+
+=> Untuk menggunakan pseudo-elemen kita gunakan dua buah tanda titik dua (::) 
+
+====== Rule =======
+=> ::first-line                         Rule styling akan diterapkan pada karakter pertama disebuah paragraf
+=> ::after                              
+=> :before
+
+dan masih banyak yang lainnya, referensi https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+* note : Sebenarnya kita bisa menggunakan satu buah tanda tanda titik dua (:) namun kita perlu membedakannya dengan pseudo-class. Karena itulah baiknya ketika menggunakan pseudo-elemen, gunakanlah dua buah titik dua (::).
+
+===================
+
+*/

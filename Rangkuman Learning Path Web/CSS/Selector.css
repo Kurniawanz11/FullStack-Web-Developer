@@ -1,0 +1,38 @@
+/* 
+
+mari kita bahas lebih detail mengenai macam macam selector yang ada.
+
+* Selector Basic
+Sebenarnya terdapat beberapa macam dari selector basic, yakni:
+* Type Selector
+    - Type Selector menggunakan nama elemen sebagai target untuk diterapkannya rule.
+    - Dengan kata lain, ketika menggunakan selector ini tentu rule akan diterapkan pada seluruh elemen target yang ada pada dokumen HTML.
+* Class Selector
+    - Class selector menetapkan target elemen berdasarkan nilai dari atribut class yang diterapkan pada elemennya. 
+    - Untuk penulisan selector, awali dengan tanda titik (.) kemudian lanjutkan dengan nama class-nya.
+    - Class bersifat shareable, sehingga dapat diterapkan pada banyak elemen dengan tipe elemen yang berbeda-beda.
+    -Kita juga bisa menargetkan elemen secara spesifik yang memiliki sebuah class.caranya dengan tuliskan nama elemen target diikuti dengan titik (.) kemudian nama kelasnya.
+* ID Selector
+    - ID selector menetapkan target elemen berdasarkan nilai dari atribut id yang diterapkan pada elemennya.
+    - atribut id ini tidak bersifat shareable, yang artinya nilai id ini harus unik dan digunakan pada satu elemen saja.
+    - Untuk menetapkan selector dengan menggunakan id, kita gunakan tanda octothorpe (#) atau lebih familiar disebut dengan hash.
+* Attribute Selector
+    - Attribute selector merupakan cara menetapkan target elemen berdasarkan sebuah atribut yang digunakan atau bahkan bisa lebih spesifik dengan nilainya
+    - Berikut daftar syntaxnya
+Syntax								Description
+=> [attr]							Menargetkan elemen yang menerapkan atribut attr.
+=> [attr=value]						Menargetkan elemen yang menerapkan atribut attr dengan nilai value.
+=> [attr~=value]					Menargetkan elemen yang menerapkan atribut attr dengan salah satu nilainya adalah value.
+=> [attr^=value]					Menargetkan elemen yang menerapkan atribut attr yang nilainya diawali dengan nilai value.
+=> [attr$=value]					Menargetkan elemen yang menerapkan atribut attr yang nilainya diakhiri dengan value.
+=> [attr*=value]					Menargetkan elemen yang menerapkan atribut attr yang nilainya mengadung value.
+
+
+* Universal Selector
+    - Universal selector digunakan untuk diterapkan pada seluruh elemen. 
+    - Tetapi selector ini juga bisa secara spesifik menargetkan sebuah elemen dengan menggabungkan bersama selector yang lainnya. 
+    
+
+* note : Jika kita ingin menerapkan sebuah rule pada banyak elemen, sebaiknya gunakan atribut class, bukan dengan id.
+
+*/

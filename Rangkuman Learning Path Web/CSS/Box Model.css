@@ -1,0 +1,108 @@
+/* 
+
+* Box Element
+=> setiap elemen pada HTML baik itu block-level atau inline elemen, akan menghasilkan sebuah kotak elemen.
+
+=> Content : Merupakan sebuah inti dari kotak elemen yang merupakan konten dari elemen itu sendiri
+=> Padding : Area yang menjadi jarak antara border elemen dengan konten yang ditampilkan. Ketika kita menerapkan background-color maka warna tersebut diterapkan pada area padding. Penerapan ukuran padding pada elemen merupakan opsional.
+=> Border : Merupakan garis yang mencakup konten beserta padding. Penerapan border pada elemen merupakan opsional.
+=> Margin : Berbeda dengan padding, margin merupakan area jarak diluar dari border. Pada ilustrasi diatas, margin ditunjukkan dengan warna merah muda namun pada aslinya margin selalu transparan dan penerapan margin pada elemen merupakan opsional.
+=> Edge of element : merupakan batas dari suatu elemen. Di dalamnya terdapat margin, border, padding dan konten. Pada ilustrasi di atas, batas elemen ditunjukkan dengan garis putus tetapi pada aslinya batas elemen selalu tidak terlihat.
+
+
+* Box Dimensions
+=> kita dapat mengatur nilai dimensi dari box tersebut dengan properti width dan height. 
+=> Cara yang paling banyak digunakan dalam menentukan dimensi kotak adalah dengan menggunakan pixel, persentase, atau ems.
+=> Secara tradisional, pixel merupakan cara yang paling populer karena kita dapat merancang dan mengontrol ukuran secara akurat. 
+=> Berbeda ketika kita menggunakan persentase, ukuran kotak akan relative atau menyesuaikan dari ukuran lain, seperti ukuran jendela browser atau ukuran induk yang menaunginya.
+=> Sedangkan ketika menggunakan ems, nilai dimensi kotak akan menyesuaikan berdasarkan ukuran teks yang ditampilkan pada konten elemen tersebut. 
+=> Pada saat ini banyak developer mulai merancang menggunakan persentase dan ems untuk menetapkan ukuran box agar dapat menyesuaikan dengan berbagai macam ukuran layar.
+
+* Limiting Dimension
+=> Beberapa website yang ada sekarang menampilkan layout yang dapat melebar dan menyempit mengikuti ukuran layar pengguna. 
+=> Pada prinsip tampilan tersebut mungkin kita memerlukan sebuah limitasi ukuran yang harus ditampilkan agar konten selalu dapat ditampilkan secara proporsional.
+=> Untuk melakukannya kita manfaatkan properti min-width dan max-width.
+    - min-width : merupakan properti yang digunakan untuk menetapkan nilai lebar minimal yang harus dimiliki elemen.
+    - max-width : merupakan properti yang digunakan untuk menetapkan nilai lebar maksimal yang harus dimiliki elemen.
+=> kita dapat menggunakan properti max-width untuk memastikan bahwa baris teks yang muncul tidak terlalu lebar.
+
+* Overflowing Content
+=> Dimensi box yang dihasilkan elemen selalu cukup untuk menampung konten tetapi hal ini tidak berlaku jika kita tetapkan secara manual panjang dan lebarnya. Tak jarang terjadi overflow ketika kita menerapkan ukuran pada elemen tetapi konten di dalamnya begitu banyak. 
+Untuk menangani kasus seperti ini kita bisa gunakan properti overflow. Properti ini dapat bernilai:
+    => visible : Merupakan nilai default pada properti ini. Konten yang tidak tertampung (overflow) akan tetap ditampilkan seperti pada standarnya.
+    => hidden : Jika terjadi overflow, maka konten yang tidak tertampung akan disembunyikan.
+    => scroll : Memunculkan scroll bar pada pinggir elemen, sehingga konten yang tidak tertampung akan ditampilkan dengan scroll bar. Jika menggunakan nilai ini, scroll bar akan tetap muncul walaupun konten tidak terjadi overflow.
+    => auto : Sama seperti scroll, bedanya jika tidak terjadi overflow, maka nilai visible yang akan diterapkan.
+
+* Box-sizing
+=> Dengan menggunakan properti box-sizing kita dapat menentukannya berdasarkan border box, di mana ukuran elemen sudah termasuk content, padding dan border.
+=> Dengan metode ini, hasil elemen yang ditampilkan (termasuk padding dan border) akan memiliki dimensi yang sama persis seperti yang kita tentukan.
+
+* Border
+=> Border merupakan sebuah garis yang mengelilingi area konten dan padding (opsional). Kita bisa mengatur tipe, ketebalan, serta warna garis yang ditampilkan sesuai dengan yang kita inginkan.
+
+* Border Width
+=> Properti border-width digunakan untuk mengatur ketebalan dari border. Nilai dari properti ini dapat berupa pixel atau menggunakan predefined names value seperti thin, medium, dan thick. 
+=> Kita tidak bisa menggunakan nilai persentase (%) pada properti in
+exp: 
+shorthand : border-width: 2px 1px 1px 2px; top right bottom left
+
+Properti border-width dapat ditentukan dengan menggunakan satu, dua, tiga, atau empat nilai. Berikut penjelasannya: 
+=> Ketika satu nilai ditentukan, maka nilai berlaku untuk empat sisi.
+=> Ketika dua nilai ditentukan, nilai pertama berlaku untuk sisi atas dan bawah, nilai kedua untuk sisi kiri dan kanan.
+=> Ketika tiga nilai ditentukan, nilai pertama berlaku untuk sisi atas, nilai yang kedua untuk sisi kiri dan kanan, nilai ketiga untuk sisi bawah.
+=> Ketika empat nilai ditentukan, nilai pertama berlaku untuk sisi atas, nilai yang kedua untuk sisi kanan, nilai yang ketiga untuk sisi bawah, dan nilai yang keempat untuk sisi kiri. Urutan tersebut berdasarkan arah jarum jam (clockwise).
+
+* Border Style
+=> Kita bisa menetapkan tipe border dengan menggunakan properti border-style. Berikut nilai - nilai yang dapat digunakan pada properti ini:
+Nilai Properti			Penjelasan
+solid					Tipe garis padat (tidak terputus - putus)
+dotted					Garis yang dibentuk dari serangkaian titik-titik (jika ketebalan garis 2px, maka titik-titik akan berukuran 2px dan memiliki jarak 2px antar titiknya).
+dashed					Garis yang dibentuk dari serangkaian garis pendek.
+double					Garis yang dibentuk dari dua buah garis padat.
+groove					Tipe garis yang berbentuk seperti frame
+hidden					Digunakan untuk menyembunyikan garis pada elemen.
+
+* Border Color
+=> Properti terakhir adalah border-color. Properti ini digunakan untuk menentukan warna pada garis dengan menggunakan nilai RGB, Hex, atau nama warna pada CSS.
+exp: 
+ menggunakan rgb format 
+border-color: rgb(80, 138, 212);
+ 
+ menggunakan format hex 
+border-color: #4ee717;
+ 
+ menggunakan nama warna 
+border-color: red;
+
+exp shorthand : border-color: #919191 #111111 #4ee717 #00c8eb;
+
+* Shorthand
+=>  border: 4px dashed #00a2c6;   / border: width style color
+
+* Padding
+=> Padding merupakan jarak antara area konten dan border. 
+=> Pixel merupakan satuan yang sering digunakan dalam menetapkan nilai properti ini (meskipun kita bisa juga menggunakan persentase atau ems).
+=> Jika menetapkan menggunakan persentase, maka nilai akan menjadi relatif pada elemen induk atau jendela browser (jika tidak memiliki induk elemen).
+
+shorthand padding : padding: 10px 15px 10px 15px;  / top right bottom left
+
+* Margin
+=> Margin digunakan untuk menjaga elemen agar tidak bertabrakan satu sama lain atau dari tepi jendela browser.
+=> jika padding mengataur jarak di dalam konten, sedangkan margin di luar konten
+=> Margin ini bersifat collapsed, yang artinya dapat menumpuk jika terdapat dua margin yang saling bertumpukan. 
+=> Jika terjadi pertumpukan margin, maka nilai yang paling besar yang akan diterapkan.
+exp: 
+ margin: 10px 15px 20px 25px; / top right bottom left
+ margin: 10px 15px; / top dan bottom bernilai 10px, left dan right bernilai 15px 
+
+* Centering Content
+=> Bagaimana meletakkan sebuah kotak tepat pada tengah sebuah halaman atau di dalam elemen induknya?
+=> Aturlah margin kanan dan kiri dengan nilai auto.
+=> kita juga harus menentukan lebar dari kotak tersebut (menggunakan properti width)
+=> Jika tidak, kotak akan mengambil lebar penuh pada halaman atau induk elemen.
+=> Setelah kita menentukan lebar kotak dan mengatur margin kiri dan kanan menjadi auto, maka secara otomatis browser akan memberi jarak yang sama di setiap sisi horizontal kotak, sehingga membuat kotak berada di tengah halaman. 
+exp: margin: 0 auto
+
+
+*/

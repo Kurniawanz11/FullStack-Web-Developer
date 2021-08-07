@@ -1,0 +1,33 @@
+/* 
+
+* Floating
+=> Sederhananya properti float dapat membuat elemen berada pada sebelah kanan atau kiri. Saat diterapkan pada elemen inline, properti float juga memungkinkan elemen di sekitarnya mengelilingi elemen tersebut (wrap). 
+=> Selain dalam membuat text wrapping. Float juga merupakan salah satu teknik dalam membuat layout website. 
+=> Teknik ini masih banyak digunakan oleh developer karena sangat mudah dipahami dan tergolong mudah untuk multiple column 
+=> Hal ini dapat dilakukan dengan mudah menggunakan properti float, karena nilai dari properti ini adalah left dan right. 
+
+
+* Permasalahan penerapan float
+=> Jika sebuah elemen induk hanya memiliki satu elemen dengan menerapkan properti float, ia akan memiliki nilai tinggi 0px.
+=> pada elemen tersebut kita tidak menerapkan tingginya.
+
+Hal ini menunjukkan bahwa elemen yang menerapkan float “tidak dianggap ada” oleh induk elemen yang menaunginya karena jika menggunakan float, elemen akan dikeluarkan dari normal flow.
+
+Bagaimana Anda menanganinya? 
+
+Terdapat dua cara yang akan kita bahas, 
+=> yakni dengan pertama, menggunakan properti clear dan 
+=> kedua, menetapkan nilai overflow: auto pada container.
+
+* Clear Property
+=> Cara yang pertama adalah dengan menggunakan properti clear.
+=> Properti clear memang dibuat untuk menghilangkan sifat float, dengan demikian elemen yang menerapkan properti float akan kembali “dianggap ada”. Namun untuk menerapkan properti ini kita perlu membuat sebuah elemen kosong (biasanya menggunakan div tanpa konten) yang menerapkan properti clear.
+=> Nilai dari properti clear merupakan nilai yang digunakan pada properti float karena properti clear akan menghapus sifat float sesuai dengan nilai yang ditetapkan.
+
+Properti : left, right dan both (keduanya)
+
+* overflow: auto;
+=> Untuk menerapkannya sangatlah simpel. Cukup tambahkan properti overflow dengan nilai auto pada container.
+
+
+*/

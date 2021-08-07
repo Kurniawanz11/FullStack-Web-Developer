@@ -1,0 +1,19 @@
+/* 
+
+=> CSS menyediakan sebuah fitur yang dapat kita gunakan untuk menentukan rule hanya pada ukuran viewport tertentu. Fitur tersebut dinamakan CSS Media Queries.
+
+exp : 
+ Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px 
+@media screen and (max-width: 992px) {
+    ........
+   }
+     Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px 
+   @media screen and (max-width: 600px) {
+      ........
+   }
+
+* referensi : https://www.dicoding.com/blog/dasar-tampilan-responsif-pada-website/ 
+              https://developers.google.com/web/fundamentals/design-and-ux/responsive
+
+
+*/

@@ -1,0 +1,44 @@
+/* 
+* Combinators
+
+Ada empat kombinator yang dapat kita gunakan yaitu:
+=> Adjacent Sibling Selector. 
+=> General Sibling Selector. 
+=> Child Selector.
+=> Descendant Selector.
+
+=> Pseudo-class  
+=> Pseudo-element.
+
+
+* Adjacent Sibling Selector (+)
+=> Adjacent Sibling Selector menggabungkan dua buah basic selector dengan menggunakan tanda + di antara keduanya.
+exp: img + p {color: green;}
+=> Adjacent Sibling Selector terdiri dari dua buah target elemen,
+=> namun hanya elemen kedua yang menerapkan rule selama elemen tersebut dituliskan langsung setelah elemen pertama pada berkas HTML
+=> Selain itu kedua elemen tersebut harus berada di dalam induk elemen yang sama.
+
+
+* General Sibling Selector (~)
+=> Mirip seperti Adjacent Sibling Selector namun rules akan diterapkan pada seluruh elemen kedua yang berada setelah elemen pertama. 
+=> Dengan catatan, induknya sama, walaupun posisi dari elemen kedua tidak berada tepat setelahnya.
+=> General Sibling Selector menggunakan tanda ~ untuk menetapkan elemenya.
+exp: img ~ p {color: green;}
+=> Rule di atas akan diterapkan pada elemen paragraf yang berada setelah elemen img selama masih di dalam induk yang sama.
+
+
+* Child Selector (>)
+=> Child Selector menggabungkan dua buah basic selector dengan menggunakan tanda greater than (>) di antara basic selector-nya.
+exp: div > p {background-color: yellow;}
+=> Pada contoh di atas, rule akan diterapkan pada seluruh elemen paragraf yang berada di dalam elemen div secara langsung.
+=> Dalam arti lain, elemen paragraf merupakan anak dari elemen div secara langsung.
+
+
+* Descendant Selector (space)
+=> Descendant Selector mirip seperti child selector namun hierarkinya lebih luas, karena rule akan diterapkan pada seluruh elemen yang menjadi turunannya walaupun secara tidak langsung.
+=> Basic selector pertama yang dituliskan pada selector ini menjadi induknya dan basic selector yang kedua merupakan elemen yang akan menerapkan rule.
+=> Selector ini menggunakan spasi dalam menggabungkan dua basic selector.
+exp: div p {background-color: yellow;}
+=> Pada contoh di atas rule akan diterapkan pada seluruh elemen paragraf yang merupakan turunan dari elemen div.
+
+*/
