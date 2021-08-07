@@ -1,0 +1,50 @@
+=> Elemen <table> pada HTML merepresentasikan data tabular atau informasi yang disajikan dalam sebuah tabel.
+=> Tabel sendiri disajikan dalam dua dimensi yang terdiri dari baris dan kolom (cell) yang berisikan sebuah data
+
+
+======== Struktur Dasar Sebuah Tabel ========
+=> Tabel pada HTML disusun dari tiga buah elemen, yaitu <table>, <tr> ,dan <td> atau <th>.
+=> Elemen <table> digunakan untuk menandakan dimulai dan diakhirinya sebuah konten tabel dan juga sebagai wadah untuk tabel itu sendiri.
+=> elemen <tr> digunakan untuk membuat sebuah baris baru yang di dalamnya terdapat elemen <td> atau <th> sehingga menghasilkan sebuah cell.
+=> Elemen <td> yang berarti “table data” selain membuat cell elemen ini juga merupakan tempat di mana data pada tabel ditampung.
+=> elemen <th> atau “table header” digunakan untuk menentukan sebuah header pada kolom datanya.
+
+note : Perlu kita ingat, bahwa seluruh konten atau data dituliskan pada elemen <td> ataupun <th>. Kita bisa memberikan konten apa saja di dalamnya seperti teks, gambar, atau tabel lainnya.    
+=============================================
+
+================ Spanning Cell ========================
+=> merging cell atau menggabungkan sebuah sel
+=> Spanning cell yang artinya menjangkau atau merentangkan sebuah ukuran sel lebih dari ukuran yang biasanya
+Dengan spanning cell kita dapat membuat sebuah tabel yang lebih kompleks, tetapi akan membuat markup yang kita tulis menjadi sedikit sulit dibaca.
+
+# Column Spans
+=> Untuk merentangkan sebuah kolom (column spanning) kita bisa menggunakan atribut colspan pada elemen <td> atau <th></th>
+=> Maka sebuah elemen yang menggunakan atribut colspan akan mencakup ruang kolom sesuai nilai dari atribut itu sendiri.
+
+# Row Spans
+=> Untuk merentangkan sebuah baris (row spanning) kita dapat menggunakan atribut rowspan
+=> Sama seperti column spanning, tetapi atribut ini akan merentangkan sebuah sel ke bawah.
+=======================================================
+
+
+====== Elemen dan Atribut pada Tabel =======
+Elemen dan Atribut												Description
+=> table															Menetapkan elemen tabel.
+=> td																Menetapkan sebuah sel dalam baris tabel.
+	- colspan=”number”												Jumlah kolom yang dicakup oleh sel.
+	- rowspan=”number”												Jumlah baris yang dicakup oleh sel.
+	- headers=”nama header”											Mengasosiasikan data sel dengan header.
+=> th																Menetapkan header yang terkait dengan baris atau kolom.
+	- colspan=”number”												Jumlah kolom dicakup oleh header.
+	- rowspan=”number”												Jumlah row yang dicakup oleh header.
+	- headers=”nama header”											Mengasosiasikan header dengan header lain.
+	- scope=”row|col|rowgroup|colgroup”								Mengasosiasikan header dengan baris, kelompok baris, kolom atau kelompok kolom.
+=> tr																Menetapkan sebuah baris pada tabel.
+=> caption															Memberikan judul pada sebuah tabel.
+=> col 																Menetapkan sebuah kolom.
+=> colgroup															Menetapkan sebuah kelompok kolom.
+=> tbody															Mengidentifikasi sebuah body dalam tabel.
+=> tfoot															Mengidentifikasi sebuah footer dalam tabel.
+=> thead															Mengidentifikasi sebuah header dalam tabel.
+
+============================================

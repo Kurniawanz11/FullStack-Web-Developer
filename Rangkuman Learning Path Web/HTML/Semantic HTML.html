@@ -1,0 +1,89 @@
+=========== Header dan Footer ==============
+Elemen ini dapat kita gunakan untuk:
+    => Sebuah header dan footer utama yang muncul pada awal dan akhir di sebuah halaman <body>. 
+    => Header digunakan sebagai pengantar atau pembuka konten dalam sebuah elemen <article> atau <section>. 
+    => Footer digunakan sebagai catatan kaki pada sebuah elemen <article> atau <section>.
+
+=> elemen <header> digunakan untuk menampilkan nama situs dan navigasi utama.
+=> elemen <footer> digunakan sebagai informasi hak cipta.
+=> Selain itu, elemen <header> dan <footer> dapat digunakan pada sebuah elemen <article> atau <section></section>
+=> Header biasanya menampung judul dan penulis
+=> footer dapat menampung sebuah link untuk membagikan artikel pada sebuah sosial media.
+
+note : Perlu kita ketahui bahwa elemen <header> dan <footer> tidak boleh ditulis di dalam elemen <header> dan <footer> lainnya (bertumpuk/nested). 
+============================================
+
+=========== Main ==============
+=> Element <main> digunakan untuk menampung/mewadahi konten utama (dominan) dalam <body></body>
+=> Konten main dapat terdiri dari banyak section, ataupun artikel, atau konten apapun di dalam elemen main, selama termasuk konten utama yang dimiliki oleh website.
+=> Karena elemen <main> merupakan berisi dari inti konten pada website, jangan gunakan elemen main lebih dari satu pada berkas HTML.
+
+Catatan: <!-- --> merupakan tag komentar pada HTML, teks yang terdapat di antara tag tersebut, tidak akan ditampilkan pada website. Fungsinya untuk memberikan komentar saja/catatan.
+===============================
+
+=========== Nav ==============
+=> Elemen <nav> digunakan untuk menampung sebuah navigasi yang sifatnya penting (major), contohnya navigasi utama pada sebuah website.
+=> Tapi tidak menjamin pada sebuah website hanya ada satu navigasi, Contohnya, sebuah akhir artikel pada blog terdapat tautan navigasi menuju artikel yang dianggap relevan dengan artikel yang telah kita baca
+=> Navigasi tersebut tidak dianggap sebagai navigasi yang penting, sehingga kita tidak perlu menggunakan elemen <nav> untuk menampilkannya.
+=> Sebuah navigation pada dasarnya sangat berguna untuk aksesibilitas website kita.
+=> Contohnya ketika pengguna website kita menggunakan screen reader dalam mengunjungi website, pengguna akan mudah mencari bagian yang dia inginkan tanpa harus menelusuri seluruh konten website.
+==============================
+
+=========== Article ==============
+=> Elemen <article> bertindak sebagai container untuk independen konten pada sebuah halaman, artinya konten utuh yang tidak terkait dengan konten lain. Bisa saja konten yang dimasud berupa artikel blog, komentar, forum post, dan konten lainnya.
+=> Jika sebuah halaman terdapat beberapa artikel, maka tiap artikel tersebut seharusnya berada pada elemen article-nya masing-masing.
+note : Elemen <article> dapat berada pada elemen <article> lainnya (nested) selama artikel tersebut berkaitan dengan induk elemen <article> yang menampungnya.
+==================================
+
+=========== Aside ==============
+=> Elemen <aside> memiliki dua tujuan, tergantung kita menempatkannya di dalam sebuah elemen <article> atau tidak.
+=> jika di tempatkan di dalam elemen <article>, pada elemen ini dapat berisi informasi yang berhubungan dengan artikel tersebut. tetapi bukan bagian dari konten artikelnya itu sendiri(dipisahkan dari konten utama)
+    exp : 
+    <article>
+        <p>Konten Artikel</p>
+        <aside></aside>
+    </article>
+=> Ketika elemen ini ditempatkan di luar dari elemen <article>, pada elemen ini dapat berisikan informasi yang berhubungan pada keseluruhan halaman.
+    exp : 
+    <main>
+        <article>
+            ......
+        </article>
+        <aside>
+            <article>
+                <header>
+                    <h2>Kota Bandung</h2>
+                    <p>Kota Kembang Paris van Java</p>
+                    <figure>
+                        <img src="img/bandung-badge.png">
+                        <figcaption>Lambang</figcaption>
+                    </figure>
+                </header>
+            </article>
+        </aside>
+     </main>
+
+================================
+
+=========== Section ==============
+=> Sebuah elemen yang memiliki kesamaan konten dan memiliki sebuah heading di dalamnya dapat dikelompokkan dengan menggunakan elemen <section></section>
+=> Dengan begitu elemen ini dapat digunakan pada sebuah elemen <article> yang memiliki konten panjang dan berpotensi untuk dikelompokkan.
+=> Di dalam sebuah <section> sebaiknya terdapat elemen heading (h1 - h6), yang menjadi elemen pertama yang dituliskan pada sebuah section untuk menunjukkan judul atau tema dari bagian konten yang dikelompokkan.
+    exp : 
+    <article>
+        <section>
+            <h2 >Wisata</h2>
+            <p>Sejak dibukanya Jalan Tol Cipularang</p>
+        </section>
+        <section>
+            <h3>Farm House Lembang</h3>
+            <img src="img/farm-house.jpg">
+            <p>Kota Bandung dikelilingi oleh pegunungan</p>
+        </section>
+        <section>
+            <h3>Observatorium Bosscha</h3>
+            <img src="img/bosscha.jpg">
+            <p>Memiliki beberapa teleskop</p>
+        </section>
+     </article>
+================================== 

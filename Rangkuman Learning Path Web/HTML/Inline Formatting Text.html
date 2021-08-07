@@ -1,0 +1,77 @@
+========= Inline Formatting Text ===========
+=> Standarnya elemen HTML memiliki dua sifat yaitu block dan inline
+=> Elemen yang memiliki sifat block selalu membuat baris baru ketika menampilkannya, contohnya seperti elemen paragraf, list, heading, dan lainnya
+=> Berlawanan dengan elemen yang memiliki sifat inline, elemen ini tidak menambahkan baris baru ketika dibuat. 
+
+Apa saja elemen tersebut?
+# Anchor
+=> Anchor (jangkar) merupakan elemen yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email, atau URL lainnya
+=> ntuk menggunakan elemen ini kita gunakan tag <a>...</a> bersama dengan atribut href untuk menetapkan sebuah target yang akan dituju
+=> Selain atribut href, terdapat beberapa atribut khusus yang dapat digunakan pada elemen ini, antara lain:
+Atribut						 Nilai										Deskripsi
+=> download					 filename									Menginstruksikan browser untuk mengunduh pada URL yang ditetapkan daripada mengarahkannya.  
+=> href						 URL										Menetapkan target yang akan diarahkan/unduh ketika pengguna menekan hyperlink.
+=> hreflang					 language_code								Menetapkan bahasa dari dokumen target.
+=> ping						 list_of_URLs								Menetapkan URL yang akan diberitahu dengan mengirimkan post request ping pada body oleh browser (berjalan di belakang layar) ketika target URL pada hyperlink ditekan. Biasanya atribut ini digunakan untuk pelacakan.
+=> referrerpolicy			 no-referrer,								Menetapkan referensi untuk dikirim pada target.
+							 no-referrer-when-downgrade,
+							 origin,
+							 origin-when-cross-origin,
+							 unsafe-url									
+=> rel						 alternate,									Menetapkan hubungan antara halaman yang ditampilkan dengan target.
+							 author,
+							 bookmark,
+							 external,
+							 help,
+							 license,
+							 next,
+							 nofollow,
+							 noreferrer,
+							 noopener,
+							 prev,
+							 search,
+							 tag
+=> target					 _blank,									Menetapkan lokasi ketika membuka target contohnya pada sebuah tab, window atau pada tab itu sendiri.
+							 _parent,
+							 _self,
+							 _top
+=> media					 media_type									Menetapkan tipe media yang digunakan pada target.
+
+
+# Emphasized text
+=> Gunakan elemen <em> untuk menunjukan bagian kata yang perlu kita tekankan.
+=> Elemen ini menunjukan stress emphasis atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus
+
+# Important text
+=> Gunakan elemen <strong> untuk menunjukan sebuah teks yang begitu penting (strong importance), serius, ataupun mendesak
+=> Standarnya pada browser sebuah teks yang diberi markup <strong> akan ditampilkan secara tebal
+=> Dan ketika pengguna menggunakan pembaca layar (screen reader), suara yang terdengar akan berbeda. Ini mengartikan bahwa teks tersebut penting tidak hanya sekedar tebal.
+
+# Short quotations
+=> Gunakan elemen <q> untuk menandai sebuah kutipan dalam sebuah teks 
+=> emen short quations berbeda dengan <blockquote></blockquote>
+=> Elemen ini digunakan untuk kutipan pendek yang terletak di dalam baris (inline).
+=> Standarnya pada browser sebuah teks yang diberi markup <q> akan ditampilkan di dalam tanda kutip (Quotation marks).
+
+# Citation
+=> Selain sebuah atribut, <cite> juga merupakan sebuah elemen yang digunakan untuk sebuah rujukan pada sebuah dokumen
+=> Standarnya pada browser sebuah teks yang diberi markup <cite> akan ditampilkan dengan garis miring (italic).
+
+# Defining terms
+=> Elemen <dfn> digunakan ketika mendefinisikan sebuah istilah (term)
+=> Elemen ini harus terletak pada elemen lain yang menaunginya, Contohnya pada sebuah elemen <p> atau elemen <section></section>
+=> Standar pada browser yakni sebuah teks yang diberi markup <dfn> akan ditampilkan dengan garis miring (italic).
+
+# Subscript dan Superscript
+=> Subscript <sub> dan superscript <sup> merupakan elemen yang dapat membuat teks yang ditampilkan nampak kecil, dengan posisi di bawah (sub) atau di atas (sup) dari teks biasanya
+=> Elemen ini digunakan untuk menunjukan sebuah rumus kimia ataupun matematika.
+
+# Highlighted text
+=> Untuk menandai atau menyorot sebuah teks kita bisa menggunakan elemen <mark>
+=> Elemen ini digunakan ketika terdapat sebuah teks yang memiliki peran penting, biasanya teks tersebut merupakan bagian yang paling relevan atau penting dalam sebuah konteks kalimat.
+=> Standarnya pada browser teks yang diberi markup <mark> akan ditampilkan dengan background kuning dan teks hitam.
+
+# Line Break
+=> Inline line break element atau <br> dapat digunakan untuk memberitahu browser untuk memberikan sebuah garis baru pada baris teks
+=> Sama seperti gambar, elemen ini merupakan elemen kosong sehingga kita tidak membutuhkan sebuah tag penutup.
+============================================
