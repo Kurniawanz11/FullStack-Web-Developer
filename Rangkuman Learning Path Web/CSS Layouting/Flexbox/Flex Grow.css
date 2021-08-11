@@ -1,0 +1,20 @@
+/* 
+
+
+=> Properti flex-grow ini digunakan untuk memberitahu berapa banyak ukuran yang harus ditetapkan oleh flex-item.
+=> Nilai dari properti ini bukan nilai dari dimensi asli pada flex item, melainkan nilai yang relatif terhadap ruang kosong pada flex container.
+
+
+Contoh : 
+Jika kita menetapkan nilai yang sama pada seluruh flex item, maka dimensi dari tiap flex item akan sama rata dan memenuhi ruang kosong yang ada pada container. Namun jika kita memberikan nilai yang berbeda dari salah satu itemnya, contohnya nilai yang lebih besar, maka flex item tersebut akan mencakup ukuran yang lebih besar. Flex item yang lain akan menyusut menyesuaikan agar tetap masuk pada ruang flex container.
+
+
+
+=> Cara kerja flex-grow mirip seperti potongan kue.
+=> Ruang kosong pada elemen akan dibagi-bagi sesuai besaran nilainya. Contoh di atas memberi kita gambaran seperti sebuah kue dengan luas total 4, kemudian kue tersebut dipotong menjadi 3 potong. Potongan yang tengah mendapatkan 2 bagian dan potongan yang lainnya masing - masing mendapatkan 1 bagian. Maka potongan yang tengah akan lebih besar dari potongan yang lain.
+
+
+note:  ketika kita mengubah ukuran dari suatu flex item, maka flex item yang lain pun akan terpengaruh.
+
+
+ */

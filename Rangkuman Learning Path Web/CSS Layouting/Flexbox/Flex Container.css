@@ -1,0 +1,14 @@
+/* 
+
+Apa itu Flex Container ? 
+Flex container merupakan sebuah elemen yang menampung beberapa flex item. Karena Parent-child merupakan relasi yang wajib ada dalam penerapan flexbox, maka setiap flex item harus merupakan anak / child dari flex container.
+
+=> Secara default deretan flex-item pada container ditampilkan secara horizontal.
+=> Ketika menggunakan flex, kita tidak perlu mengatur dimensi dari tiap flex item secara manual untuk mengisi ruang kosong pada container.
+
+Membuat Flex Container 
+=> Untuk membuat sebuah flex container kita gunakan properti display dengan nilai flex.
+=> Dengan demikian seluruh anak dari container tersebut akan menjadi flex item.
+
+
+*/

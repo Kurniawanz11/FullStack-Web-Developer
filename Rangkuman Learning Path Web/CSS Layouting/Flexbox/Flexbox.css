@@ -1,0 +1,19 @@
+/* 
+
+Flexbox : Flexible Box Model 
+
+Apa itu Flexbox ? 
+=> mode layout yang mudah dan praktis untuk mengatur elemen dengan menggunakan sebuah container.
+
+Kelebihan flexbox 
+=> kita dapat mengatur ukuran secara otomatis dan mampu beradaptasi dengan ukuran container-nya.
+=> Dengan kemampuan flexibelnya, tampilan layout yang disusun menggunakan flexbox menjadi mobile-friendly.
+=> Selain itu, flexbox dapat dikombinasikan dengan media query, sehingga ia dapat lebih optimal lagi digunakan pada peranti mobile.
+
+
+Berikut beberapa konsep dari flexbox yang perlu kita ketahui:
+=> Dapat mengubah ukuran dimensi elemen dengan menyesuaikan ukuran yang cocok bagi ruang kosong yang ada pada container-nya.
+=> Flexbox is directional agnostic. ini berbeda dengan konsep block model di mana elemen selalu ditampilkan secara vertikal dengan membuat baris baru. Ini berbeda pula dengan konsep inline model di mana elemen selalu ditampilkan secara horizontal. Dengan flexbox kita dapat melakukan kedua hal tersebut dengan mudah.
+=> Dibuat untuk menyusun layout yang mobile friendly.
+
+*/

@@ -1,0 +1,20 @@
+/* 
+
+Flexbox merupakan directional agnostic,
+=> di mana kita dapat mengubah arah flex-item ditempatkan pada container.
+=> Secara default deretan flex-item ditampilkan secara horizontal, namun kita dapat mengubahnya dengan menetapkan properti flex-direction pada container-nya.
+
+Ada empat nilai yang bisa digunakan untuk properti flex-direction, antara lain:
+
+=> row : merupakan nilai default, di mana deretan flex-item pada container ditampilkan secara horizontal.
+=> row-reverse : memiliki sifat yang sama seperti row, namun urutan flex item-nya ditukar.
+=> column : Deretan flex-item pada container ditampilkan secara vertikal.
+=> column-reverse : memiliki sifat yang sama seperti column, namun urutan flex item-nya ditukar.
+
+
+
+note : Karena properti flex-direction ini, kita dapat membuat dua dimensional layout dengan menempatkan flex container di dalam flex container, dalam arti lain sebuah flex container dapat memiliki child berupa flex container lain.
+
+
+
+*/
